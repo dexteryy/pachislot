@@ -7,3 +7,6 @@ node_modules/
 .sass-cache/
 dist/
 static/
+js/mod/mo/README.md
+js/mod/mo/package.json
+js/mod/mo/tests/

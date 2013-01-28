@@ -8,34 +8,39 @@ module.exports = function(grunt) {
         istatic: {
             main: {
                 repos: {
+                    'necolas/normalize.css': {
+                        file: {
+                            'normalize.css': 'css/'
+                        }
+                    },
                     'dexteryy/OzJS': {
                         file: {
-                            '/oz.js': '/js/lib/'
+                            'oz.js': 'js/lib/'
                         }
                     },
                     'dexteryy/mo': {
                         file: {
-                            '/': '/js/mod/mo/'
+                            '': 'js/mod/mo/'
                         }
                     },
                     'dexteryy/DollarJS': {
                         file: {
-                            '/dollar.js': '/js/mod/'
+                            'dollar.js': 'js/mod/'
                         }
                     },
                     'dexteryy/EventMaster': {
                         file: {
-                            '/eventmaster.js': '/js/mod/'
+                            'eventmaster.js': 'js/mod/'
                         }
                     },
                     'dexteryy/ChoreoJS': {
                         file: {
-                            '/choreo.js': '/js/mod/'
+                            'choreo.js': 'js/mod/'
                         }
                     },
-                    'dexteryy/db.js': {
+                    'dexteryy/db.js-with-EventMaster': {
                         file: {
-                            '/src/db.js': '/js/mod/'
+                            'src/db.js': 'js/mod/'
                         }
                     }
                 }
