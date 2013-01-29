@@ -33,6 +33,11 @@ module.exports = function(grunt) {
                             'eventmaster.js': 'js/mod/'
                         }
                     },
+                    'dexteryy/SovietJS': {
+                        file: {
+                            'soviet.js': 'js/mod/'
+                        }
+                    },
                     'dexteryy/ChoreoJS': {
                         file: {
                             'choreo.js': 'js/mod/'

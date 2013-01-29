@@ -2,6 +2,7 @@
 require.config({
     baseUrl: 'js/mod/',
     aliases: {
+        data: '../data/',
         pachislot: '../pachislot/'
     }
 });
@@ -18,8 +19,9 @@ require([
     'choreo',
     'eventmaster',
     'pachislot/app',
+    'data/sample',
     'mo/domready'
-], function(_, $, key, easingLib, choreo, event, app){
+], function(_, $, key, easingLib, choreo, event, app, data_sample){
 
     choreo.config({
         easing: easingLib
@@ -28,6 +30,9 @@ require([
     var observer = event();
 
     app.init({
+        node: $('.machine'),
+        data: data_sample,
+        dataPicUrl: 'pics/data/sample/',
         observer: observer
     });
 
