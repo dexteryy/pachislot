@@ -87,10 +87,8 @@ define([
             this._lamp = node.find('.lamp');
             this.horserace = horserace({
                 frame: this._lamp[0],
-                inner: this._screen[0],
-                styles: ['red', 'yellow', 'blue', 'green', 'white']
+                inner: this._screen[0]
             });
-            //this.horserace.waiting();
             $(window).bind('resize', function(){
                 app.horserace.reset();
             });
@@ -111,19 +109,25 @@ define([
             }
             this._currentView = view;
             this._currentView.addClass('active');
+            this.pause();
+            this.horserace.stop();
         },
 
         updateRoller: function(){
             if (this._mainView) {
                 this._mainView.remove();
             }
+            var d = 5 - this._currentGame.col,
+                empyt_col = d > 0 ? Math.ceil(d/2) : 0;
             this._mainView = $(tpl.convertTpl(TPL_MAIN_VIEW, {
                 data: this._data.sort(function(){
                     return Math.random() - 0.5;
                 }),
                 dataPicUrl: this._dataPicUrl,
-                width: Math.ceil(this._screen.width() / this._currentGame.col),
+                width: Math.ceil(this._screen.width() / (empyt_col*2 + parseFloat(this._currentGame.col))),
                 height: this._screen.height(),
+                num: Math.ceil(this._data.length / this._currentGame.col),
+                emptyCol: empyt_col,
                 col: this._currentGame.col
             })).appendTo(this._screen);
             this.updateView(this._mainView);
@@ -135,6 +139,7 @@ define([
                     .appendTo(this._screen);
             }
             this.updateView(this._welView);
+            this.horserace.welcome();
         },
 
         showMainView: function(){
@@ -220,6 +225,9 @@ define([
         },
 
         start: function(){
+            if (this._running) {
+                return;
+            }
             if (!this._currentGame) {
                 return alert('先创建或加载！');
             }
@@ -232,9 +240,12 @@ define([
                     return;
                 }
             }
+            if (this._currentView !== this._mainView) {
+                this.showMainView();
+            }
             var results = [],
                 slots = this._mainView.find('.slot');
-            this._stoped = false;
+            this._running = true;
             this.horserace.waiting();
             slots.forEach(function(slot, i){
                 var count = 0,
@@ -252,14 +263,14 @@ define([
                         stage.play().complete();
                         count = -1;
                     } else {
-                        if (app._stoped && --stop_count <= 0) {
+                        if (!app._running && --stop_count <= 0) {
                             var result = cards.eq(count).find('a');
                             results.push([
                                 result.attr('href').replace(/.*#/, ''),
                                 result.find('strong').text(),
                                 result.find('img').attr('src').replace(/.*\//, '')
                             ]);
-                            if (results.length === slots.length) {
+                            if (results.length === slots.length - 1) {
                                 app.observer.fire('result', [results]);
                             }
                             return;
@@ -272,11 +283,15 @@ define([
             });
         },
 
+        pause: function(){
+            this._running = false;
+        },
+
         stop: function(){
             if (!this._currentGame || this._currentGame.results) {
                 return;
             }
-            this._stoped = true;
+            this._running = false;
             this.observer.once('result', function(results){
                 var lib = _.index(results, '0');
                 app._data = app._data.filter(function(item){

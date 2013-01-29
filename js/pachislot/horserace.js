@@ -10,10 +10,8 @@ define([
         DEFAULTS = {
             frame: null,
             inner: null,
-            group: 5,
-            styles: ['active']
-        },
-        led_style = ['red', 'yellow', 'blue', 'green', 'white'];
+            group: 5
+        };
 
     function Horserace(opt){
         this._config = _.config({}, opt, DEFAULTS);
@@ -45,14 +43,24 @@ define([
             $(this._config.frame).html(html);
         },
 
+        stop: function(){
+            var leds = $('.led', this._config.frame);
+            clearTimeout(this._lampTimer);
+            leds.forEach(function(led){
+                led.className = 'led';
+            });
+        },
+
+        welcome: function(){
+            this.whirling('blue', 2600, 600);
+        },
+
         waiting: function(){
-            this.whirling(this._config.styles[Math.floor(Math.random()*5)], 
-                400, 200);
+            this.whirling('yellow', 400, 200);
         },
 
         greeting: function(){
-            this.twinkle(this._config.styles[Math.floor(Math.random()*5)],
-                200, 200); 
+            this.twinkle('yellow', 200, 200); 
         },
 
         twinkle: function(style, on, off){

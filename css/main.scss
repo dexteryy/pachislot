@@ -399,6 +399,15 @@ html,body {
   .roller {
   }
 
+  .empty-slot {
+    display:block;
+    float:left;
+    overflow:hidden;
+    padding:0;
+    margin:0 8px 0 0px;
+    height:2000px;
+  }
+
   .slot {
     display:block;
     float:left;
