@@ -1,0 +1,11 @@
+{
+  "name": "doubanchouII:pachislot",
+  "description": "",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt-istatic": ">=0.1.0",
+    "grunt": "0.3.17",
+    "grunt-ozjs": ">=0.1.9",
+    "grunt-contrib-compass": "~0.1.0"
+  }
+}
