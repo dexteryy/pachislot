@@ -19,9 +19,9 @@ require([
     'choreo',
     'eventmaster',
     'pachislot/app',
-    'data/sample',
+    'data/2012',
     'mo/domready'
-], function(_, $, key, easingLib, choreo, event, app, data_sample){
+], function(_, $, key, easingLib, choreo, event, app, data){
 
     choreo.config({
         easing: easingLib
@@ -31,8 +31,8 @@ require([
 
     app.init({
         node: $('.machine'),
-        data: data_sample,
-        dataPicUrl: 'pics/data/sample/',
+        data: data,
+        dataPicUrl: 'pics/data/2012/',
         observer: observer
     });
 

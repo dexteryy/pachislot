@@ -11,14 +11,16 @@ define([
     './tpl/wel',
     './tpl/new',
     './tpl/save',
-    './tpl/load'
+    './tpl/load',
+    './tpl/export'
 ], function(_, $, tpl, soviet, choreo, db, horserace,
-    tpl_main, tpl_wel, tpl_new, tpl_save, tpl_load){
+    tpl_main, tpl_wel, tpl_new, tpl_save, tpl_load, tpl_export){
 
     var TPL_MAIN_VIEW = tpl_main.template,
         TPL_WEL_VIEW = tpl_wel.template,
         TPL_NEW_VIEW = tpl_new.template,
         TPL_LOAD_VIEW = tpl_load.template,
+        TPL_EXPORT_VIEW = tpl_export.template,
         TPL_SAVE_VIEW = tpl_save.template;
 
     var uievents = {
@@ -177,7 +179,14 @@ define([
         },
 
         showExportView: function(){
-        
+            if (this._exportView) {
+                this._exportView.remove();
+            }
+            var games = JSON.parse(localStorage.getItem('pachi-games')) || [];
+            this._exportView = $(tpl.convertTpl(TPL_EXPORT_VIEW, {
+                records: games
+            })).appendTo(this._screen);
+            this.updateView(this._exportView);
         },
 
         resetData: function(){
@@ -249,7 +258,6 @@ define([
             this.horserace.waiting();
             slots.forEach(function(slot, i){
                 var count = 0,
-                    stop_count = 1,
                     cards = $('li', slot),
                     total = cards.length,
                     unit = cards.height(),
@@ -263,14 +271,14 @@ define([
                         stage.play().complete();
                         count = -1;
                     } else {
-                        if (!app._running && --stop_count <= 0) {
+                        if (!app._running) {
                             var result = cards.eq(count).find('a');
                             results.push([
                                 result.attr('href').replace(/.*#/, ''),
-                                result.find('strong').text(),
-                                result.find('img').attr('src').replace(/.*\//, '')
+                                result.find('img').attr('src').replace(/.*\//, ''),
+                                result.find('strong').text()
                             ]);
-                            if (results.length === slots.length - 1) {
+                            if (results.length === slots.length) {
                                 app.observer.fire('result', [results]);
                             }
                             return;

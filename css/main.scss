@@ -172,6 +172,15 @@ html,body {
       padding:0;
     }
 
+    .export-view {
+
+      fieldset {
+        overflow-y:scroll;
+        height:200px;
+      }
+
+    }
+
     fieldset {
       border:1px solid #030;
       margin:0 0 20px 0;

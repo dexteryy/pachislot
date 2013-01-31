@@ -17,15 +17,15 @@
 
                 {% var last = data[i + num - 1]; if (!last) { last = data[data.length - 1]; } %}
                 <li><a href="#{%= last[0] %}" style="height:{%= height %}px;">
-                    <strong>{%= last[1] %}</strong>
-                    <img src="{%= dataPicUrl %}{%= last[2] %}">
+                    <strong>{%= last[2] %}</strong>
+                    <img src="{%= dataPicUrl %}{%= last[1] %}">
                 </a></li>
 
             {% } %}
 
             <li><a href="#{%= item[0] %}" style="height:{%= height %}px;">
-                <strong>{%= item[1] %}</strong>
-                <img src="{%= dataPicUrl %}{%= item[2] %}">
+                <strong>{%= item[2] %}</strong>
+                <img src="{%= dataPicUrl %}{%= item[1] %}">
             </a></li>
 
         {% }); %}
