@@ -42,11 +42,6 @@ module.exports = function(grunt) {
                         file: {
                             'choreo.js': 'js/mod/'
                         }
-                    },
-                    'dexteryy/db.js-with-EventMaster': {
-                        file: {
-                            'src/db.js': 'js/mod/'
-                        }
                     }
                 }
             }

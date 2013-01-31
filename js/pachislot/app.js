@@ -5,7 +5,6 @@ define([
     'mo/template',
     'soviet',
     'choreo',
-    'db',
     './horserace',
     './tpl/main',
     './tpl/wel',
@@ -13,7 +12,7 @@ define([
     './tpl/save',
     './tpl/load',
     './tpl/export'
-], function(_, $, tpl, soviet, choreo, db, horserace,
+], function(_, $, tpl, soviet, choreo, horserace,
     tpl_main, tpl_wel, tpl_new, tpl_save, tpl_load, tpl_export){
 
     var TPL_MAIN_VIEW = tpl_main.template,
