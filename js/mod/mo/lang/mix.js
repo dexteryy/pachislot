@@ -6,8 +6,8 @@
  * vim: et:ts=4:sw=4:sts=4
  */
 define("mo/lang/mix", [
-    "mo/lang/es5",
-    "mo/lang/type"
+    "./es5",
+    "./type"
 ], function(_0, _, require, exports){
 
     var type = _.type;
@@ -60,7 +60,13 @@ define("mo/lang/mix", [
         }
         for (var n = 1; n < ol; n++) {
             obj = objs[n];
+            if (typeof obj !== 'object') {
+                continue;
+            }
             if (Array.isArray(origin)) {
+                if (!Array.isArray(obj)) {
+                    continue;
+                }
                 origin = origin || [];
                 lib = {};
                 marked = [];
@@ -117,7 +123,13 @@ define("mo/lang/mix", [
         }
         for (var n = 1; n < ol; n++) {
             obj = objs[n];
+            if (typeof obj !== 'object') {
+                continue;
+            }
             if (Array.isArray(origin)) {
+                if (!Array.isArray(obj)) {
+                    continue;
+                }
                 origin = origin || [];
                 lib = {};
                 marked = [];
@@ -184,6 +196,26 @@ define("mo/lang/mix", [
 
     exports.unique = function(origin, lvl) {
         return merge(origin, [], lvl);
+    };
+
+    exports.each = function(obj, fn, context){
+        var i = 0, l = obj.length, re;
+        if (_.isArraylike(obj)) {
+            for (; i < l; i++) {
+                re = fn.call(context, obj[i], i);
+                if (re === false) {
+                    break;
+                }
+            }
+        } else {
+            for (i in obj) {
+                re = fn.call(context, obj[i], i);
+                if (re === false) {
+                    break;
+                }
+            }
+        }
+        return obj;
     };
 
 });

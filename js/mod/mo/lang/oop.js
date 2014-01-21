@@ -6,49 +6,73 @@
  * vim: et:ts=4:sw=4:sts=4
  */
 define("mo/lang/oop", [
-    "mo/lang/es5",
-    "mo/lang/mix"
+    "./es5",
+    "./mix"
 ], function(es5, _, require, exports){
 
     var mix = _.mix;
 
-    function _apply(base, self, args){
-        return base.apply(self, args);
-    }
-
     exports.construct = function(base, mixes, factory){
         if (mixes && !Array.isArray(mixes)) {
             factory = mixes;
+            mixes = null;
         }
         if (!factory) {
             factory = function(){
                 this.superConstructor.apply(this, arguments);
             };
         }
+        if (!base.__constructor) {
+            base.__constructor = base;
+            base.__supr = base.prototype;
+        }
         var proto = Object.create(base.prototype),
             supr = Object.create(base.prototype),
-            constructor = function(){
-                var self = this;
-                this.constructor = constructor;
-                this.superConstructor = function(){
-                    _apply.prototype = base.prototype;
-                    var su = new _apply(base, self, arguments);
-                    for (var i in su) {
-                        if (!self[i]) {
-                            self[i] = supr[i] = su[i];
-                        }
-                    }
-                };
-                this.superClass = supr;
-                return factory.apply(this, arguments);
-            };
-        constructor.prototype = proto;
+            current_supr = supr;
+        supr.__super = base.__supr;
+        var sub = function(){
+            this.superMethod = sub.__superMethod;
+            this.superConstructor = su_construct;
+            this.constructor = sub.__constructor;
+            this.superClass = supr; // deprecated!
+            return factory.apply(this, arguments);
+        };
+        sub.__supr = supr;
+        sub.__constructor = sub;
+        sub.__superMethod = function(name, args){
+            var mysupr = current_supr;
+            current_supr = mysupr.__super;
+            var re = mysupr[name].apply(this, args);
+            current_supr = mysupr;
+            return re;
+        };
+        sub.prototype = proto;
         if (mixes) {
             mixes = mix.apply(this, mixes);
             mix(proto, mixes);
             mix(supr, mixes);
         }
-        return constructor;
+        function su_construct(){
+            var cache_constructor = base.__constructor,
+                cache_super_method = base.__superMethod;
+            base.__constructor = sub;
+            base.__superMethod = sub.__superMethod;
+            _apply.prototype = base.prototype;
+            var su = new _apply(base, this, arguments);
+            for (var i in su) {
+                if (!this[i]) {
+                    this[i] = supr[i] = su[i];
+                }
+            }
+            base.__constructor = cache_constructor;
+            base.__superMethod = cache_super_method;
+            this.superConstructor = su_construct;
+        }
+        return sub;
     };
+
+    function _apply(base, self, args){
+        base.apply(self, args);
+    }
 
 });

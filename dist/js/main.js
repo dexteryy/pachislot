@@ -673,348 +673,398 @@ define("mo/domready", [
     }
 });
 
-/* @source ../data/2012.js */;
+/* @source ../data/2014.js */;
 
-define("../data/2012", ([
-[1, '1.jpg', '碇源堂'], 
-[2, '2.jpg', '碇真嗣'], 
-[3, '3.jpg', '葛城美里'], 
-[4, '4.jpg', '凌波丽'], 
-[5, '5.jpg', '明日香'], 
-[6, '6.jpg', '真希波.玛丽.伊兰崔亚斯'], 
-[7, '7.jpg', '渚熏'], 
-[8, '8.jpg', '阿拉蕾'], 
-[9, '9.jpg', '则卷宝瓜'], 
-[10, '10.jpg', '则卷千兵卫'], 
-[11, '11.jpg', '阿童木'], 
-[12, '12.jpg', '茶水博士'], 
-[13, '13.jpg', '天马博士'], 
-[14, '14.jpg', '浅仓南'], 
-[15, '15.jpg', '上杉达也'], 
-[16, '16.jpg', '上杉和也'], 
-[17, '17.jpg', '原田正平'], 
-[18, '18.jpg', '大黄蜂'], 
-[19, '19.jpg', '红蜘蛛'], 
-[20, '20.jpg', '力捷'], 
-[21, '21.jpg', '爵士'], 
-[22, '22.jpg', '擎天柱'], 
-[23, '23.jpg', '声波'], 
-[24, '24.jpg', '铁皮'], 
-[25, '25.jpg', '威震天'], 
-[26, '26.jpg', '震荡波'], 
-[27, '27.jpg', '路易'], 
-[28, '28.jpg', '马里奥'], 
-[29, '29.jpg', '蘑菇王子'], 
-[30, '30.jpg', '桃子公主'], 
-[31, '31.jpg', '阿土伯'], 
-[32, '32.jpg', '大老千'], 
-[33, '33.jpg', '金贝贝'], 
-[34, '34.jpg', '钱夫人'], 
-[35, '35.jpg', '忍太郎'], 
-[36, '36.jpg', '沙隆巴斯'], 
-[37, '37.jpg', '孙小美'], 
-[38, '38.jpg', '乌咪'], 
-[39, '39.jpg', '奥利弗'], 
-[40, '40.jpg', '大力水手波比'], 
-[41, '41.jpg', '白雪公主'], 
-[42, '42.jpg', '布鲁托'], 
-[43, '43.jpg', '黛丝'], 
-[44, '44.jpg', '高飞'], 
-[45, '45.jpg', '米奇'], 
-[46, '46.jpg', '米妮'], 
-[47, '47.jpg', '睡美人'], 
-[48, '48.jpg', '唐纳德'], 
-[49, '49.jpg', '哆啦A梦'], 
-[50, '50.jpg', '哆啦美'], 
-[52, '52.jpg', '刚田虎'], 
-[53, '53.jpg', '野比大雄'], 
-[54, '54.jpg', '野比玉子'], 
-[55, '55.jpg', '野比助'], 
-[56, '56.jpg', '源静香'], 
-[57, '57.jpg', '阿尔冯斯.爱力克'], 
-[58, '58.jpg', '爱德华.爱力克'], 
-[59, '59.jpg', '金.布拉德雷'], 
-[60, '60.jpg', '拉丝特'], 
-[61, '61.jpg', '莎莉.霍克爱'], 
-[62, '62.jpg', '马斯.休斯'], 
-[63, '63.jpg', '瓦特.法尔曼'], 
-[64, '64.jpg', '伊兹米.卡迪斯'], 
-[65, '65.jpg', '巴特'], 
-[66, '66.jpg', '草薙素子'], 
-[67, '67.jpg', '荒卷大辅'], 
-[69, '69.jpg', '阿丽埃蒂'], 
-[70, '70.jpg', '阿珊'], 
-[71, '71.jpg', '阿斯贝鲁'], 
-[72, '72.jpg', '阿席达卡'], 
-[73, '73.jpg', '巴鲁'], 
-[74, '74.jpg', '荻野千寻'], 
-[75, '75.jpg', '锅炉爷爷'], 
-[76, '76.jpg', '哈尔'], 
-[77, '77.jpg', '红发少女安妮'], 
-[78, '78.jpg', '龙猫'], 
-[79, '79.jpg', '魔女琪琪'], 
-[80, '80.jpg', '娜乌西卡'], 
-[81, '81.jpg', '汤婆婆'], 
-[82, '82.jpg', '希达'], 
-[83, '83.jpg', '赈早见琥珀主'], 
-[84, '84.jpg', '安西光义'], 
-[85, '85.jpg', '赤木刚宪'], 
-[86, '86.jpg', '赤木晴子'], 
-[87, '87.jpg', '宫城良田'], 
-[88, '88.jpg', '井上彩子'], 
-[89, '89.jpg', '流川枫'], 
-[90, '90.jpg', '木暮公延'], 
-[91, '91.jpg', '三井寿'], 
-[92, '92.jpg', '仙道彰'], 
-[93, '93.jpg', '樱木花道'], 
-[95, '95.jpg', '白鸽侦探'], 
-[96, '96.jpg', '白猫班长'], 
-[97, '97.jpg', '大盗贼'], 
-[98, '98.jpg', '大脸猫'], 
-[99, '99.jpg', '沸羊羊'], 
-[100, '100.jpg', '黑猫警长'], 
-[101, '101.jpg', '红太狼'], 
-[102, '102.jpg', '灰太狼'], 
-[103, '103.jpg', '邋遢大王'], 
-[104, '104.jpg', '蓝皮鼠'], 
-[105, '105.jpg', '美羊羊'], 
-[106, '106.jpg', '小灰灰'], 
-[107, '107.jpg', '一只耳仓鼠'], 
-[108, '108.jpg', '海绵宝宝'], 
-[109, '109.jpg', '派大星'], 
-[110, '110.jpg', '小蜗'], 
-[111, '111.jpg', '蟹老板'], 
-[112, '112.jpg', '章鱼哥'], 
-[113, '113.jpg', '布鲁克'], 
-[114, '114.jpg', '弗兰奇'], 
-[115, '115.jpg', '罗罗诺亚.索隆'], 
-[116, '116.jpg', '蒙奇.D.路飞'], 
-[117, '117.jpg', '娜美'], 
-[118, '118.jpg', '妮可.罗宾'], 
-[119, '119.jpg', '山治'], 
-[120, '120.jpg', '托尼托尼.乔巴'], 
-[121, '121.jpg', '乌索普'], 
-[122, '122.jpg', '花仙子露露'], 
-[123, '123.jpg', '春野樱'], 
-[124, '124.jpg', '大蛇丸'], 
-[125, '125.jpg', '干柿鬼鲛'], 
-[126, '126.jpg', '辉夜君麻吕'], 
-[127, '127.jpg', '勘九郎'], 
-[128, '128.jpg', '李洛克'], 
-[129, '129.jpg', '奈良鹿丸'], 
-[130, '130.jpg', '旗木卡卡西'], 
-[131, '131.jpg', '千手纲手'], 
-[132, '132.jpg', '秋道丁次'], 
-[133, '133.jpg', '犬冢牙'], 
-[134, '134.jpg', '日向雏田'], 
-[135, '135.jpg', '日向宁次'], 
-[136, '136.jpg', '山中井野'], 
-[137, '137.jpg', '手鞠'], 
-[138, '138.jpg', '天天'], 
-[139, '139.jpg', '我爱罗'], 
-[140, '140.jpg', '漩涡鸣人'], 
-[141, '141.jpg', '药师兜'], 
-[142, '142.jpg', '油女志乃'], 
-[143, '143.jpg', '宇智波鼬'], 
-[144, '144.jpg', '宇智波佐助'], 
-[145, '145.jpg', '自来也'], 
-[146, '146.jpg', '比古清十郎'], 
-[147, '147.jpg', '绯村剑心'], 
-[148, '148.jpg', '高荷惠'], 
-[149, '149.jpg', '卷町操'], 
-[150, '150.jpg', '濑田宗次郎'], 
-[151, '151.jpg', '明神弥彦'], 
-[152, '152.jpg', '神谷熏'], 
-[153, '153.jpg', '四乃森苍紫'], 
-[154, '154.jpg', '相乐左之助'], 
-[155, '155.jpg', '雪代巴'], 
-[156, '156.jpg', '雪代缘'], 
-[157, '157.jpg', '斋藤一'], 
-[158, '158.jpg', '志志雄真实'], 
-[159, '159.jpg', '大道世知世'], 
-[160, '160.jpg', '李莓铃'], 
-[161, '161.jpg', '李小狼'], 
-[162, '162.jpg', '木之本桃矢'], 
-[163, '163.jpg', '木之本樱'], 
-[164, '164.jpg', '小可'], 
-[165, '165.jpg', '月城雪兔'], 
-[166, '166.jpg', '来生爱'], 
-[167, '167.jpg', '来生泪'], 
-[168, '168.jpg', '来生瞳'], 
-[169, '169.jpg', '内海俊夫'], 
-[170, '170.jpg', '爱野美奈子'], 
-[171, '171.jpg', '火野丽'], 
-[172, '172.jpg', '木野真琴'], 
-[174, '174.jpg', '小小兔'], 
-[175, '175.jpg', '夜礼服假面'], 
-[176, '176.jpg', '月野兔'], 
-[177, '177.jpg', '阿笠博士'], 
-[179, '179.jpg', '贝尔摩德'], 
-[180, '180.jpg', '赤井秀一'], 
-[181, '181.jpg', '服部平次'], 
-[182, '182.jpg', '工藤新一'], 
-[183, '183.jpg', '工藤优作'], 
-[184, '184.jpg', '工藤有希子'], 
-[185, '185.jpg', '怪盗基德'], 
-[186, '186.jpg', '琴酒'], 
-[187, '187.jpg', '灰原哀'], 
-[188, '188.jpg', '吉田步美'], 
-[189, '189.jpg', '江户川柯南'], 
-[190, '190.jpg', '铃木园子'], 
-[191, '191.jpg', '龙舌兰'], 
-[192, '192.jpg', '毛利兰'], 
-[193, '193.jpg', '毛利小五郎'], 
-[194, '194.jpg', '目暮十三'], 
-[195, '195.jpg', '水无怜奈'], 
-[196, '196.jpg', '小岛元太'], 
-[197, '197.jpg', '英妃理'], 
-[198, '198.jpg', '圆谷光彦'], 
-[199, '199.jpg', '詹姆斯.布莱克'], 
-[200, '200.jpg', '朱蒂.斯泰林'], 
-[201, '201.jpg', '巴达克'], 
-[202, '202.jpg', '贝吉塔'], 
-[203, '203.jpg', '比迪丽'], 
-[204, '204.jpg', '布尔玛.布里夫斯 '], 
-[205, '205.jpg', '布拉'], 
-[206, '206.jpg', '格罗博士'], 
-[207, '207.jpg', '龟仙人'], 
-[208, '208.jpg', '鹤仙人'], 
-[209, '209.jpg', '饺子'], 
-[210, '210.jpg', '拉蒂兹'], 
-[211, '211.jpg', '兰琪'], 
-[212, '212.jpg', '佩佩'], 
-[213, '213.jpg', '皮拉夫'], 
-[214, '214.jpg', '撒旦先生'], 
-[215, '215.jpg', '孙悟饭'], 
-[216, '216.jpg', '孙悟天'], 
-[217, '217.jpg', '特兰克斯'], 
-[218, '218.jpg', '天津饭'], 
-[219, '219.jpg', '乌龙'], 
-[220, '220.jpg', '小林'], 
-[221, '221.jpg', '安迪'], 
-[222, '222.jpg', '八神庵'], 
-[223, '223.jpg', '拜仁.巴特勒'], 
-[224, '224.jpg', '坂崎由莉'], 
-[225, '225.jpg', '坂崎良'], 
-[226, '226.jpg', '坂崎琢磨'], 
-[227, '227.jpg', '不知火舞'], 
-[228, '228.jpg', '蔡宝健'], 
-[229, '229.jpg', '草薙京'], 
-[230, '230.jpg', '陈可汗'], 
-[231, '231.jpg', '椎拳崇'], 
-[232, '232.jpg', '大门五郎'], 
-[233, '233.jpg', '东丈'], 
-[234, '234.jpg', '二阶堂红丸'], 
-[235, '235.jpg', '哈迪兰'], 
-[236, '236.jpg', '金家藩'], 
-[237, '237.jpg', '克拉克'], 
-[238, '238.jpg', '拉尔夫'], 
-[239, '239.jpg', '卢卡尔'], 
-[240, '240.jpg', '罗伯特'], 
-[241, '241.jpg', '洛奇.古洛巴'], 
-[242, '242.jpg', '神乐千鹤'], 
-[243, '243.jpg', '特瑞'], 
-[244, '244.jpg', '夏尔米'], 
-[245, '245.jpg', '镇元斋'], 
-[246, '246.jpg', '钢牙'], 
-[247, '247.jpg', '琥珀'], 
-[248, '248.jpg', '桔梗'], 
-[249, '249.jpg', '铃'], 
-[250, '250.jpg', '弥勒'], 
-[251, '251.jpg', '冥加爷爷'], 
-[252, '252.jpg', '奈落'], 
-[253, '253.jpg', '七宝'], 
-[254, '254.jpg', '犬夜叉'], 
-[255, '255.jpg', '日暮戈薇'], 
-[256, '256.jpg', '杀生丸'], 
-[257, '257.jpg', '珊瑚'], 
-[258, '258.jpg', '神乐'], 
-[260, '260.jpg', '邪见'], 
-[261, '261.jpg', '云母'], 
-[262, '262.jpg', '冰河'], 
-[263, '263.jpg', '瞬'], 
-[264, '264.jpg', '星矢'], 
-[265, '265.jpg', '雅典娜'], 
-[266, '266.jpg', '一辉'], 
-[267, '267.jpg', '紫龙'], 
-[268, '268.jpg', '穆法沙'], 
-[269, '269.jpg', '辛巴'], 
-[270, '270.jpg', '茶渡泰虎'], 
-[271, '271.jpg', '黑崎一护'], 
-[272, '272.jpg', '井上织姬'], 
-[273, '273.jpg', '石田雨龙'], 
-[275, '275.jpg', 'L'], 
-[276, '276.jpg', '梅罗'], 
-[277, '277.jpg', '弥海砂'], 
-[278, '278.jpg', '尼亚'], 
-[279, '279.jpg', '（死神）琉克'], 
-[281, '281.jpg', '汤姆'], 
-[282, '282.jpg', '巴斯光年'], 
-[284, '284.jpg', '不二周助'], 
-[285, '285.jpg', '大石秀一郎'], 
-[286, '286.jpg', '乾贞治'], 
-[287, '287.jpg', '海堂熏'], 
-[288, '288.jpg', '河村隆'], 
-[289, '289.jpg', '菊丸英二'], 
-[291, '291.jpg', '手冢国光'], 
-[292, '292.jpg', '桃城武'], 
-[293, '293.jpg', '幸村精市'], 
-[294, '294.jpg', '越前龙马'], 
-[295, '295.jpg', '阿奴'], 
-[296, '296.jpg', '彩依'], 
-[297, '297.jpg', '韩梦慈'], 
-[298, '298.jpg', '李逍遥'], 
-[299, '299.jpg', '林天南'], 
-[300, '300.jpg', '林月如'], 
-[301, '301.jpg', '刘晋元'], 
-[302, '302.jpg', '王小虎'], 
-[303, '303.jpg', '赵灵儿'], 
-[304, '304.jpg', '坂本辰马'], 
-[305, '305.jpg', '坂田银时'], 
-[306, '306.jpg', '冲田总悟'], 
-[307, '307.jpg', '服部全藏'], 
-[308, '308.jpg', '冈田似蔵'], 
-[309, '309.jpg', '高杉晋助'], 
-[310, '310.jpg', '桂小太郎'], 
-[311, '311.jpg', '河上万齐'], 
-[312, '312.jpg', '近藤勋'], 
-[313, '313.jpg', '来岛又子'], 
-[314, '314.jpg', '柳生九兵卫'], 
-[315, '315.jpg', '柳生敏木斋'], 
-[316, '316.jpg', '土方十四郎'], 
-[317, '317.jpg', '伊东鸭太郎'], 
-[318, '318.jpg', '长谷川泰三'], 
-[319, '319.jpg', '志村妙'], 
-[320, '320.jpg', '志村新八'], 
-[321, '321.jpg', '藏马'], 
-[322, '322.jpg', '飞影'], 
-[323, '323.jpg', '牡丹'], 
-[324, '324.jpg', '南野秀一'], 
-[325, '325.jpg', '浦饭幽助'], 
-[326, '326.jpg', '桑原和真'], 
-[327, '327.jpg', '小阎王'], 
-[328, '328.jpg', '雪村茧子'], 
-[329, '329.jpg', '大空翼'], 
-[330, '330.jpg', '岬太郎'], 
-[331, '331.jpg', '葵新伍'], 
-[332, '332.jpg', '日向小次郎'], 
-[333, '333.jpg', '若岛津健'], 
-[334, '334.jpg', '若林源三'], 
-[335, '335.jpg', '三杉淳'], 
-[336, '336.jpg', '石崎了'], 
-[337, '337.jpg', '松山光'], 
-[338, '338.jpg', '中泽旱苗'], 
-[339, '339.jpg', '八百鼠'], 
-[340, '340.jpg', '独角儿'], 
-[341, '341.jpg', '你建一'], 
-[342, '342.jpg', '清一色']
-]));
+define("../data/2014", ([
+    [1,"","阿童木之歌"],
+    [2,"","爱"],
+    [3,"","爱不爱我"],
+    [4,"","爱的代价"],
+    [5,"","爱的奉献"],
+    [6,"","爱江山更爱美人"],
+    [7,"","爱就一个字"],
+    [8,"","爱你一万年"],
+    [9,"","爱你在心口难开"],
+    [10,"","爱拼才会赢"],
+    [11,"","爱情鸟"],
+    [12,"","爱如潮水"],
+    [13,"","爱我别走"],
+    [14,"","爱相随"],
+    [15,"","爱要怎么说出口"],
+    [16,"","爱一个人好难"],
+    [17,"","爱在深秋"],
+    [18,"","安妮"],
+    [19,"","B小调雨后"],
+    [20,"","霸王别姬"],
+    [21,"","白桦林"],
+    [22,"","白天不懂夜的黑"],
+    [23,"","半梦半醒"],
+    [24,"","宝贝对不起"],
+    [25,"","北方的狼"],
+    [26,"","北京的金山上"],
+    [27,"","笨小孩"],
+    [28,"","彼岸花"],
+    [29,"","边走边唱"],
+    [30,"","别怕我伤心"],
+    [31,"","别问我是谁"],
+    [32,"","冰糖葫芦"],
+    [33,"","不见不散"],
+    [34,"","不老的传说"],
+    [35,"","不是我不小心"],
+    [36,"","不要对他说"],
+    [37,"","不再让你孤单"],
+    [38,"","不只是朋友"],
+    [39,"","采蘑菇的小姑娘"],
+    [40,"","彩虹"],
+    [41,"","沧海一声笑"],
+    [42,"","城里的月光"],
+    [43,"","迟来的爱"],
+    [44,"","赤裸裸"],
+    [45,"","虫儿飞"],
+    [46,"","窗外"],
+    [47,"","春泥"],
+    [48,"","春去春又回"],
+    [49,"","春雨"],
+    [50,"","错过你错过爱"],
+    [51,"","大地"],
+    [52,"","大哥，你好吗"],
+    [53,"","大海"],
+    [54,"","大花轿"],
+    [55,"","大约在冬季"],
+    [56,"","大中国"],
+    [57,"","单身情歌"],
+    [58,"","但愿人长久"],
+    [59,"","当"],
+    [60,"","当爱已成往事"],
+    [61,"","刀剑如梦"],
+    [62,"","稻草人"],
+    [63,"","得意的笑"],
+    [64,"","电台情歌"],
+    [65,"","东方之珠"],
+    [66,"","东风破"],
+    [67,"","冬天里的一把火"],
+    [68,"","懂你"],
+    [69,"","独角戏"],
+    [70,"","短发"],
+    [71,"","对你爱不完"],
+    [72,"","凡人歌"],
+    [73,"","风往北吹"],
+    [74,"","风雨无阻"],
+    [75,"","风再起时"],
+    [76,"","敢问路在何方"],
+    [77,"","橄榄树"],
+    [78,"","歌声与微笑"],
+    [79,"","跟往事干杯"],
+    [80,"","跟着感觉走"],
+    [81,"","故乡的云"],
+    [82,"","光辉岁月"],
+    [83,"","光阴的故事"],
+    [84,"","归来吧"],
+    [85,"","归去来"],
+    [86,"","鬼迷心窍"],
+    [87,"","滚滚红尘"],
+    [88,"","国际歌"],
+    [89,"","过火"],
+    [90,"","海阔天空"],
+    [91,"","海上花"],
+    [92,"","好大一棵树"],
+    [93,"","好汉歌"],
+    [94,"","好人一生平安"],
+    [95,"","好想谈恋爱"],
+    [96,"","何日君再来"],
+    [97,"","黑猫警长"],
+    [98,"","红豆"],
+    [99,"","红梅赞"],
+    [100,"","红旗飘飘"],
+    [101,"","红蜻蜓"],
+    [102,"","红日"],
+    [103,"","洪湖水浪打浪"],
+    [104,"","后来"],
+    [105,"","葫芦金刚"],
+    [106,"","蝴蝶飞呀"],
+    [107,"","糊涂的爱"],
+    [108,"","花房姑娘"],
+    [109,"","花好月圆"],
+    [110,"","花火"],
+    [111,"","花仙子之歌"],
+    [112,"","花心"],
+    [113,"","皇后大道东"],
+    [114,"","黄昏"],
+    [115,"","灰姑娘"],
+    [116,"","灰色轨迹"],
+    [117,"","回到拉萨"],
+    [118,"","记事本"],
+    [119,"","季候风"],
+    [120,"","寂寞的眼"],
+    [121,"","寂寞难耐"],
+    [122,"","剪爱"],
+    [123,"","江南"],
+    [124,"","姐妹"],
+    [125,"","解脱"],
+    [126,"","今年夏天"],
+    [127,"","今宵多珍重"],
+    [128,"","今夜你会不会来"],
+    [129,"","九九女儿红"],
+    [130,"","九妹"],
+    [131,"","九月九的酒"],
+    [132,"","酒干倘卖无"],
+    [133,"","军港之夜"],
+    [134,"","卡拉永远OK"],
+    [135,"","康定情歌"],
+    [136,"","铿锵玫瑰"],
+    [137,"","口是心非"],
+    [138,"","哭砂"],
+    [139,"","宽容"],
+    [140,"","来生缘"],
+    [141,"","兰花草"],
+    [142,"","蓝雨"],
+    [143,"","浪人情歌"],
+    [144,"","冷酷到底"],
+    [145,"","冷雨夜"],
+    [146,"","离歌"],
+    [147,"","李香兰"],
+    [148,"","涟漪"],
+    [149,"","练习"],
+    [150,"","恋恋风尘"],
+    [151,"","恋曲1980"],
+    [152,"","俩俩相忘"],
+    [153,"","领悟"],
+    [154,"","流光飞舞"],
+    [155,"","流年"],
+    [156,"","龙的传人"],
+    [157,"","鲁冰花"],
+    [158,"","旅行的意义"],
+    [159,"","绿叶对根的情意"],
+    [160,"","漫步人生路"],
+    [161,"","梅花三弄"],
+    [162,"","每天爱你多一些"],
+    [163,"","美酒加咖啡"],
+    [164,"","美丽花蝴蝶"],
+    [165,"","闷"],
+    [166,"","梦里水乡"],
+    [167,"","梦驼铃"],
+    [168,"","梦醒时分"],
+    [169,"","明明白白我的心"],
+    [170,"","明天会更好"],
+    [171,"","明月千里寄相思"],
+    [172,"","男儿当自强"],
+    [173,"","南海姑娘"],
+    [174,"","南泥湾"],
+    [175,"","难得有情人"],
+    [176,"","难念的经"],
+    [177,"","难忘今宵"],
+    [178,"","难以抗拒你容颜"],
+    [179,"","你的甜蜜"],
+    [180,"","你的眼神"],
+    [181,"","你的样子"],
+    [182,"","你给我一片天"],
+    [183,"","你快回来"],
+    [184,"","你是我的眼"],
+    [185,"","你在他乡还好吗"],
+    [186,"","你最珍贵"],
+    [187,"","年轻时代"],
+    [188,"","柠檬树"],
+    [189,"","挪威的森林"],
+    [190,"","女人花"],
+    [191,"","朋友"],
+    [192,"","偏偏喜欢你"],
+    [193,"","飘雪"],
+    [194,"","萍聚"],
+    [195,"","萍水相逢"],
+    [196,"","其实不想走"],
+    [197,"","棋子"],
+    [198,"","恰似你的温柔"],
+    [199,"","千年等一回"],
+    [200,"","千千阙歌"],
+    [201,"","千言万语"],
+    [202,"","千纸鹤"],
+    [203,"","牵挂你的人是我"],
+    [204,"","倩女幽魂"],
+    [205,"","亲爱的小孩"],
+    [206,"","亲密的爱人"],
+    [207,"","亲亲我的宝贝"],
+    [208,"","青藏高原"],
+    [209,"","青苹果乐园"],
+    [210,"","青青河边草"],
+    [211,"","轻轻地告诉你"],
+    [212,"","情非得已"],
+    [213,"","情书"],
+    [214,"","情网"],
+    [215,"","请跟我来"],
+    [216,"","囚鸟"],
+    [217,"","让世界充满爱"],
+    [218,"","让我欢喜让我忧"],
+    [219,"","让我们荡起双桨"],
+    [220,"","让我一次爱个够"],
+    [221,"","热情的沙漠"],
+    [222,"","人生何处不相逢"],
+    [223,"","人在旅途"],
+    [224,"","认识你真好"],
+    [225,"","容易受伤的女人"],
+    [226,"","如风"],
+    [227,"","如果云知道"],
+    [228,"","三百六十五里路"],
+    [229,"","三个和尚"],
+    [230,"","三月里的小雨"],
+    [231,"","山不转水转"],
+    [232,"","山路十八弯"],
+    [233,"","伤心太平洋"],
+    [234,"","上海滩"],
+    [235,"","少年游"],
+    [236,"","少年壮志不言愁"],
+    [237,"","舍不得你"],
+    [238,"","深呼吸"],
+    [239,"","深秋的黎明"],
+    [240,"","生日快乐"],
+    [241,"","盛夏的果实"],
+    [242,"","十年"],
+    [243,"","十七岁的雨季"],
+    [244,"","石头记"],
+    [245,"","世间始终你好"],
+    [246,"","世界第一等"],
+    [247,"","似是故人来"],
+    [248,"","似水流年"],
+    [249,"","双截棍"],
+    [250,"","谁的眼泪在飞"],
+    [251,"","水手"],
+    [252,"","水中花"],
+    [253,"","思念"],
+    [254,"","四季歌"],
+    [255,"","随缘"],
+    [256,"","太傻"],
+    [257,"","太委屈"],
+    [258,"","太想爱你"],
+    [259,"","太阳星辰"],
+    [260,"","涛声依旧"],
+    [261,"","天黑黑"],
+    [262,"","天空"],
+    [263,"","天若有情"],
+    [264,"","天堂"],
+    [265,"","天天想你"],
+    [266,"","天下有情人"],
+    [267,"","天涯"],
+    [268,"","天意"],
+    [269,"","甜蜜蜜"],
+    [270,"","跳舞街"],
+    [271,"","铁血丹心"],
+    [272,"","听海"],
+    [273,"","听说爱情回来过"],
+    [274,"","同桌的你"],
+    [275,"","童年"],
+    [276,"","偷心"],
+    [277,"","娃哈哈"],
+    [278,"","外面的世界"],
+    [279,"","外婆的澎湖湾"],
+    [280,"","弯弯的月亮"],
+    [281,"","晚秋"],
+    [282,"","万里长城永不倒"],
+    [283,"","万水千山总是情"],
+    [284,"","往事随风"],
+    [285,"","往事只能回味"],
+    [286,"","忘记他"],
+    [287,"","忘了你忘了我"],
+    [288,"","忘情森巴舞"],
+    [289,"","忘情水"],
+    [290,"","忘忧草"],
+    [291,"","为爱痴狂"],
+    [292,"","为了谁"],
+    [293,"","为你朝思暮想"],
+    [294,"","为你我受冷风吹"],
+    [295,"","为你钟情"],
+    [296,"","唯一"],
+    [297,"","味道"],
+    [298,"","吻别"],
+    [299,"","问"],
+    [300,"","问情"],
+    [301,"","问斜阳"],
+    [302,"","我不想说"],
+    [303,"","我曾用心爱着你"],
+    [304,"","我的未来不是梦 "],
+    [305,"","我的心好乱"],
+    [306,"","我的眼里只有你"],
+    [307,"","我来自北京"],
+    [308,"","我期待"],
+    [309,"","我是一只小小鸟"],
+    [310,"","我是真的爱你"],
+    [311,"","我听过你的歌"],
+    [312,"","我想有个家"],
+    [313,"","我愿意"],
+    [314,"","我只在乎你"],
+    [315,"","无言的结局"],
+    [316,"","雾里看花"],
+    [317,"","喜欢你"],
+    [318,"","戏梦"],
+    [319,"","现代爱情故事"],
+    [320,"","乡间的小路"],
+    [321,"","相逢何必曾相识"],
+    [322,"","相思风雨中"],
+    [323,"","相约九八"],
+    [324,"","想你的365天 "],
+    [325,"","想你的时候"],
+    [326,"","想说爱你不容易"],
+    [327,"","像雾像雨又像风"],
+    [328,"","逍遥游"],
+    [329,"","潇洒走一回"],
+    [330,"","小白船"],
+    [331,"","小城故事"],
+    [332,"","小村之恋"],
+    [333,"","小芳"],
+    [334,"","小李飞刀"],
+    [335,"","小龙人"],
+    [336,"","小路"],
+    [337,"","小螺号"],
+    [338,"","小松树"],
+    [339,"","小小少年"],
+    [340,"","小燕子"],
+    [341,"","笑红尘"],
+    [342,"","笑看风云"],
+    [343,"","笑脸"],
+    [344,"","谢谢你的爱1999"],
+    [345,"","心肝宝贝"],
+    [346,"","心会跟爱一起走"],
+    [347,"","心太软"],
+    [348,"","心要让你听见"],
+    [349,"","心雨"],
+    [350,"","新不了情"],
+    [351,"","新鸳鸯蝴蝶梦"],
+    [352,"","信天游"],
+    [353,"","信自己"],
+    [354,"","星光灿烂"],
+    [355,"","星星点灯"],
+    [356,"","星星知我心"],
+    [357,"","雪中情"],
+    [358,"","亚洲雄风"],
+    [359,"","一生何求"],
+    [360,"","一生所爱"],
+    [361,"","一生有你"],
+    [362,"","一世情缘"],
+    [363,"","一天"],
+    [364,"","一无所有"],
+    [365,"","一笑而过"],
+    [366,"","一言难尽"],
+    [367,"","一样的月光"],
+    [368,"","依靠"],
+    [369,"","移情别恋"],
+    [370,"","驿动的心"],
+    [371,"","因为爱所以爱"],
+    [372,"","英雄泪"],
+    [373,"","永远不回头"],
+    [374,"","永远是朋友"],
+    [375,"","勇气"],
+    [376,"","用心良苦"],
+    [377,"","游戏人间"],
+    [378,"","友情岁月"],
+    [379,"","有一点动心"]
+]).map(function(item){
+    item[1] = Math.floor(Math.random() * 13 + 1) + '.jpg';
+    return item;
+}));
 
 /* @source ../pachislot/tpl/export.js */;
 
 define("../pachislot/tpl/export", [], function(){
 
-    return {"template":"\n<div class=\"view export-view\">\n    <fieldset>\n        <legend>导出全部结果</legend>\n        {% records.forEach(function(game){ %}\n            <h6>{%= game.title %}</h6>\n            <p>人数：{%= game.cal %}</p>\n            {% (game.results || []).forEach(function(item){ %}\n            <p>\n                <strong>{%= (item[0]) %}</strong>\n                <span>{%= (item[2]) %}</span>\n            </p>\n            {% }); %}\n        {% }); %}\n    </fieldset>\n    <p class=\"btns\">\n        <input type=\"button\" value=\"返回\" class=\"cancel\">\n    </p>\n</div>\n\n\n\n"}; 
+    return {"template":"\n<div class=\"view export-view\">\n    <h3>导出全部结果</h3>\n    <fieldset>\n        {% records.forEach(function(game){ %}\n            <h6>{%= game.title %}</h6>\n            <p>人数：{%= game.col %}</p>\n            {% (game.results || []).forEach(function(item){ %}\n            <p>\n                <strong>{%= (item[0]) %} - </strong>\n                <span>{%= (item[2]) %}</span>\n            </p>\n            {% }); %}\n        {% }); %}\n    </fieldset>\n    <p class=\"btns\">\n        <input type=\"button\" value=\"返回\" class=\"cancel\">\n    </p>\n</div>\n\n\n\n"}; 
 
 });
 /* @source ../pachislot/tpl/load.js */;
@@ -1049,7 +1099,7 @@ define("../pachislot/tpl/wel", [], function(){
 
 define("../pachislot/tpl/main", [], function(){
 
-    return {"template":"\n<div class=\"view main-view\" style=\"width:{%= width * (col + emptyCol*2) %}px;\">\n    <div class=\"roller\">\n\n        {% for (var i = 0; i < emptyCol; i++) { %}\n        <ul class=\"empty-slot\" style=\"width:{%= width - 10 %}px;\"></ul>\n        {% } %}\n\n        <ul class=\"slot\" style=\"width:{%= width - 10 %}px;\">\n        {% data.forEach(function(item, i){ %}\n\n            {% if (i % num === 0) { %}\n\n                {% if (i !== 0) { %}\n                </ul><ul class=\"slot\" style=\"width:{%= width - 10 %}px;\">\n                {% } %}\n\n                {% var last = data[i + num - 1]; if (!last) { last = data[data.length - 1]; } %}\n                <li><a href=\"#{%= last[0] %}\" style=\"height:{%= height %}px;\">\n                    <strong>{%= last[2] %}</strong>\n                    <img src=\"{%= dataPicUrl %}{%= last[1] %}\">\n                </a></li>\n\n            {% } %}\n\n            <li><a href=\"#{%= item[0] %}\" style=\"height:{%= height %}px;\">\n                <strong>{%= item[2] %}</strong>\n                <img src=\"{%= dataPicUrl %}{%= item[1] %}\">\n            </a></li>\n\n        {% }); %}\n        </ul>\n\n        {% for (var i = 0; i < emptyCol; i++) { %}\n        <ul class=\"empty-slot\" style=\"width:{%= width - 10 %}px;\"></ul>\n        {% } %}\n\n    </div>\n</div>\n"}; 
+    return {"template":"\n<div class=\"view main-view unopened\" style=\"width:{%= width * (col + emptyCol*2) %}px;\">\n    <div class=\"roller\">\n\n        {% for (var i = 0; i < emptyCol; i++) { %}\n        <ul class=\"empty-slot\" style=\"width:{%= width - 10 %}px;\"></ul>\n        {% } %}\n\n        <ul class=\"slot\" style=\"width:{%= width - 10 %}px;\">\n        {% data.forEach(function(item, i){ %}\n\n            {% if (i % num === 0) { %}\n\n                {% if (i !== 0) { %}\n                </ul><ul class=\"slot\" style=\"width:{%= width - 10 %}px;\">\n                {% } %}\n\n                {% var last = data[i + num - 1]; if (!last) { last = data[data.length - 1]; } %}\n                <li><a href=\"#{%= last[0] %}\" style=\"height:{%= height %}px;background-image:url({%= dataPicUrl %}{%= last[1] %})\">\n                    <span><span></span><strong>{%= last[2] %}</strong></span>\n                    <em></em>\n                </a></li>\n\n            {% } %}\n\n            <li><a href=\"#{%= item[0] %}\" style=\"height:{%= height %}px;background-image:url({%= dataPicUrl %}{%= item[1] %})\">\n                <span><span></span><strong>{%= item[2] %}</strong></span>\n                <em></em>\n            </a></li>\n\n        {% }); %}\n        </ul>\n\n        {% for (var i = 0; i < emptyCol; i++) { %}\n        <ul class=\"empty-slot\" style=\"width:{%= width - 10 %}px;\"></ul>\n        {% } %}\n\n    </div>\n</div>\n"}; 
 
 });
 /* @source ../pachislot/tpl/led.js */;
@@ -1123,12 +1173,44 @@ define("mo/lang/es5", [], function(){
         String = host.String,
         Object = host.Object,
         Function = host.Function,
-        window = host.window,
-        _toString = Object.prototype.toString,
-        _aproto = Array.prototype;
+        //window = host.window,
+        _objproto = Object.prototype,
+        _arrayproto = Array.prototype,
+        _fnproto = Function.prototype;
 
-    if (!_aproto.filter) {
-        _aproto.filter = function(fn, sc){
+    function Empty() {}
+
+    if (!_fnproto.bind) {
+        _fnproto.bind = function (that) {
+            var target = this,
+                args = _arrayproto.slice.call(arguments, 1),
+                bound = function () {
+                    var arglist = args.concat(_arrayproto.slice.call(arguments));
+                    if (this instanceof bound) {
+                        var result = target.apply(this, arglist);
+                        if (Object(result) === result) {
+                            return result;
+                        }
+                        return this;
+                    } else {
+                        return target.apply(that, arglist);
+                    }
+                };
+            if(target.prototype) {
+                Empty.prototype = target.prototype;
+                bound.prototype = new Empty();
+                Empty.prototype = null;
+            }
+            return bound;
+        };
+    }
+
+    var _call = _fnproto.call,
+        _hasOwnProperty = _call.bind(_objproto.hasOwnProperty),
+        _toString = _call.bind(_objproto.toString);
+
+    if (!_arrayproto.filter) {
+        _arrayproto.filter = function(fn, sc){
             var r = [];
             for (var i = 0, l = this.length; i < l; i++){
                 if (i in this && fn.call(sc, this[i], i, this)) {
@@ -1139,8 +1221,8 @@ define("mo/lang/es5", [], function(){
         };
     }
         
-    if (!_aproto.forEach) {
-        _aproto.forEach = function(fn, sc){
+    if (!_arrayproto.forEach) {
+        _arrayproto.forEach = function(fn, sc){
             for(var i = 0, l = this.length; i < l; i++){
                 if (i in this)
                     fn.call(sc, this[i], i, this);
@@ -1148,8 +1230,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.map) {
-        _aproto.map = function(fn, sc){
+    if (!_arrayproto.map) {
+        _arrayproto.map = function(fn, sc){
             for (var i = 0, copy = [], l = this.length; i < l; i++) {
                 if (i in this) {
                     copy[i] = fn.call(sc, this[i], i, this);
@@ -1159,8 +1241,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.reduce) {
-        _aproto.reduce = function(fn, sc){
+    if (!_arrayproto.reduce) {
+        _arrayproto.reduce = function(fn, sc){
             for (var i = 1, prev = this[0], l = this.length; i < l; i++) {
                 if (i in this) {
                     prev = fn.call(sc, prev, this[i], i, this);
@@ -1170,8 +1252,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.some) {
-        _aproto.some = function(fn, sc){
+    if (!_arrayproto.some) {
+        _arrayproto.some = function(fn, sc){
             for (var i = 0, l = this.length; i < l; i++){
                 if (i in this && fn.call(sc, this[i], i, this)) {
                     return true;
@@ -1181,8 +1263,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.every) {
-        _aproto.every = function(fn, sc){
+    if (!_arrayproto.every) {
+        _arrayproto.every = function(fn, sc){
             for (var i = 0, l = this.length; i < l; i++){
                 if (i in this && !fn.call(sc, this[i], i, this)) {
                     return false;
@@ -1192,8 +1274,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.indexOf) {
-        _aproto.indexOf = function(elt, from){
+    if (!_arrayproto.indexOf) {
+        _arrayproto.indexOf = function(elt, from){
             var l = this.length;
             from = parseInt(from, 10) || 0;
             if (from < 0)
@@ -1206,8 +1288,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.lastIndexOf) {
-        _aproto.lastIndexOf = function(elt, from){
+    if (!_arrayproto.lastIndexOf) {
+        _arrayproto.lastIndexOf = function(elt, from){
             var l = this.length;
             from = parseInt(from, 10) || l - 1;
             if (from < 0)
@@ -1222,7 +1304,7 @@ define("mo/lang/es5", [], function(){
 
     if (!Array.isArray) {
         Array.isArray = function(obj) {
-            return _toString.call(obj) === "[object Array]";
+            return _toString(obj) === "[object Array]";
         };
     }
 
@@ -1234,8 +1316,8 @@ define("mo/lang/es5", [], function(){
         trimRight = /[\s\xA0]+$/;
     }
     if (!String.prototype.trim) {
-        String.prototype.trim = function(text) {
-            return text == null ?  "" : text.toString().replace(trimLeft, "").replace(trimRight, "");
+        String.prototype.trim = function() {
+            return this.replace(trimLeft, "").replace(trimRight, "");
         };
     }
 
@@ -1243,7 +1325,7 @@ define("mo/lang/es5", [], function(){
         Object.keys = function(obj) {
             var keys = [];
             for (var prop in obj) {
-                if ( obj.hasOwnProperty(prop) ) {
+                if (_hasOwnProperty(obj, prop)) {
                     keys.push(prop);
                 }
             }
@@ -1265,20 +1347,6 @@ define("mo/lang/es5", [], function(){
         };
     }
     
-
-    if (!Function.prototype.bind) {
-        Function.prototype.bind = function (oThis) {
-            var aArgs = _aproto.slice.call(arguments, 1), 
-                fToBind = this, 
-                fBound = function () {
-                    return fToBind.apply(this instanceof fBound ? this : oThis || window, 
-                        aArgs.concat(_aproto.slice.call(arguments)));    
-                };
-            fBound.prototype = Object.create(this.prototype);
-            return fBound;
-        };
-    }
-
 });
 
 /* @source mo/lang/type.js */;
@@ -1298,7 +1366,7 @@ define("mo/lang/type", [
         _aproto = Array.prototype,
         _typeMap = {};
 
-    _aproto.forEach.call("Boolean Number String Function Array Date RegExp Object".split(" "), function(name , i){
+    _aproto.forEach.call("Boolean Number String Function Array Date RegExp Object".split(" "), function(name){
         this[ "[object " + name + "]" ] = name.toLowerCase();
     }, _typeMap);
 
@@ -1315,15 +1383,27 @@ define("mo/lang/type", [
     };
 
     exports.isWindow = function(obj) {
-        return "setInterval" in obj;
+		return obj && obj === obj.window;
     };
 
 	exports.isEmptyObject = function(obj) {
         for (var name in obj) {
+            name = null;
             return false;
         }
         return true;
 	};
+
+    exports.isArraylike = function(obj){
+        var l = obj.length;
+        return !exports.isWindow(obj) 
+            && (typeof obj !== 'function' 
+                || obj.constructor !== Function)
+            && (l === 0 
+                || typeof l === "number"
+                && l > 0 
+                && (l - 1) in obj);
+    };
 
 });
 
@@ -1391,7 +1471,13 @@ define("mo/lang/mix", [
         }
         for (var n = 1; n < ol; n++) {
             obj = objs[n];
+            if (typeof obj !== 'object') {
+                continue;
+            }
             if (Array.isArray(origin)) {
+                if (!Array.isArray(obj)) {
+                    continue;
+                }
                 origin = origin || [];
                 lib = {};
                 marked = [];
@@ -1448,7 +1534,13 @@ define("mo/lang/mix", [
         }
         for (var n = 1; n < ol; n++) {
             obj = objs[n];
+            if (typeof obj !== 'object') {
+                continue;
+            }
             if (Array.isArray(origin)) {
+                if (!Array.isArray(obj)) {
+                    continue;
+                }
                 origin = origin || [];
                 lib = {};
                 marked = [];
@@ -1517,6 +1609,26 @@ define("mo/lang/mix", [
         return merge(origin, [], lvl);
     };
 
+    exports.each = function(obj, fn, context){
+        var i = 0, l = obj.length, re;
+        if (_.isArraylike(obj)) {
+            for (; i < l; i++) {
+                re = fn.call(context, obj[i], i);
+                if (re === false) {
+                    break;
+                }
+            }
+        } else {
+            for (i in obj) {
+                re = fn.call(context, obj[i], i);
+                if (re === false) {
+                    break;
+                }
+            }
+        }
+        return obj;
+    };
+
 });
 
 
@@ -1536,44 +1648,68 @@ define("mo/lang/oop", [
 
     var mix = _.mix;
 
-    function _apply(base, self, args){
-        return base.apply(self, args);
-    }
-
     exports.construct = function(base, mixes, factory){
         if (mixes && !Array.isArray(mixes)) {
             factory = mixes;
+            mixes = null;
         }
         if (!factory) {
             factory = function(){
                 this.superConstructor.apply(this, arguments);
             };
         }
+        if (!base.__constructor) {
+            base.__constructor = base;
+            base.__supr = base.prototype;
+        }
         var proto = Object.create(base.prototype),
             supr = Object.create(base.prototype),
-            constructor = function(){
-                var self = this;
-                this.constructor = constructor;
-                this.superConstructor = function(){
-                    _apply.prototype = base.prototype;
-                    var su = new _apply(base, self, arguments);
-                    for (var i in su) {
-                        if (!self[i]) {
-                            self[i] = supr[i] = su[i];
-                        }
-                    }
-                };
-                this.superClass = supr;
-                return factory.apply(this, arguments);
-            };
-        constructor.prototype = proto;
+            current_supr = supr;
+        supr.__super = base.__supr;
+        var sub = function(){
+            this.superMethod = sub.__superMethod;
+            this.superConstructor = su_construct;
+            this.constructor = sub.__constructor;
+            this.superClass = supr; // deprecated!
+            return factory.apply(this, arguments);
+        };
+        sub.__supr = supr;
+        sub.__constructor = sub;
+        sub.__superMethod = function(name, args){
+            var mysupr = current_supr;
+            current_supr = mysupr.__super;
+            var re = mysupr[name].apply(this, args);
+            current_supr = mysupr;
+            return re;
+        };
+        sub.prototype = proto;
         if (mixes) {
             mixes = mix.apply(this, mixes);
             mix(proto, mixes);
             mix(supr, mixes);
         }
-        return constructor;
+        function su_construct(){
+            var cache_constructor = base.__constructor,
+                cache_super_method = base.__superMethod;
+            base.__constructor = sub;
+            base.__superMethod = sub.__superMethod;
+            _apply.prototype = base.prototype;
+            var su = new _apply(base, this, arguments);
+            for (var i in su) {
+                if (!this[i]) {
+                    this[i] = supr[i] = su[i];
+                }
+            }
+            base.__constructor = cache_constructor;
+            base.__superMethod = cache_super_method;
+            this.superConstructor = su_construct;
+        }
+        return sub;
     };
+
+    function _apply(base, self, args){
+        base.apply(self, args);
+    }
 
 });
 
@@ -1706,6 +1842,7 @@ define("mo/template/micro", [
 
     exports.tplSettings = {
         _cache: {},
+        comment: /\{\*([\s\S]+?)\*\}/g,
         evaluate: /\{%([\s\S]+?)%\}/g,
         interpolate: /\{%=([\s\S]+?)%\}/g
     };
@@ -1732,12 +1869,13 @@ define("mo/template/micro", [
                 }
             }
         } else {
-            func = new Function(namespace || 'obj', 'api', 'var __p=[];' 
+            var tplfunc = new Function(namespace || 'obj', 'api', 'var __p=[];' 
                 + (namespace ? '' : 'with(obj){')
                     + 'var mix=api.mix,escapeHTML=api.escapeHTML,substr=api.substr,include=api.include,has=api._has(' + (namespace || 'obj') + ');'
                     + '__p.push(\'' +
                     str.replace(/\\/g, '\\\\')
                         .replace(/'/g, "\\'")
+                        .replace(c.comment, '')
                         .replace(c.interpolate, function(match, code) {
                             return "'," + code.replace(/\\'/g, "'") + ",'";
                         })
@@ -1751,8 +1889,11 @@ define("mo/template/micro", [
                     + "');" 
                 + (namespace ? "" : "}")
                 + "return __p.join('');");
+            func = function(data, helpers){
+                return tplfunc.call(this, data, _.mix({}, exports.tplHelpers, helpers));
+            };
         }
-        return !func ? '' : (data ? func(data, exports.tplHelpers) : func);
+        return !func ? '' : (data ? func(data) : func);
     }
 
     exports.convertTpl = convertTpl;
@@ -3008,6 +3149,56 @@ define("eventmaster", [
     return exports;
 });
 
+/* @source mo/easing/base.js */;
+
+
+define("mo/easing/base", [], function(){
+
+    return {
+
+        def: 'ease',
+
+        positions: {
+            'linear'         :  [0.250, 0.250, 0.750, 0.750],
+            'ease'           :  [0.250, 0.100, 0.250, 1.000],
+            'easeIn'         :  [0.420, 0.000, 1.000, 1.000],
+            'easeOut'        :  [0.000, 0.000, 0.580, 1.000],
+            'easeInOut'      :  [0.420, 0.000, 0.580, 1.000]
+        },
+
+        values: {
+            linear: 'linear',
+            ease: 'ease',
+            easeIn: 'ease-in',
+            easeOut: 'ease-out',
+            easeInOut: 'ease-in-out'
+        },
+
+        // http://gsgd.co.uk/sandbox/jquery/easing/
+        // t: current time, b: begInnIng value, c: change In value, d: duration
+        functions: {
+            linear: function(x, t, b, c) {
+                return b + c * x;
+            },
+            ease: function(x, t, b, c) {
+                return ((-Math.cos(x*Math.PI)/2) + 0.5) * c + b;
+            },
+            easeIn: function (x, t, b, c, d) {
+                return c*(t /= d)*t + b;
+            },
+            easeOut: function (x, t, b, c, d) {
+                return -c *(t /= d)*(t-2) + b;
+            },
+            easeInOut: function (x, t, b, c, d) {
+                if ((t /= d/2) < 1) return c/2*t*t + b;
+                return -c/2 * ((--t)*(t-2) - 1) + b;
+            }
+        },
+
+    };
+
+});
+
 /* @source mo/mainloop.js */;
 
 /**
@@ -3021,10 +3212,12 @@ define("eventmaster", [
  * vim: et:ts=4:sw=4:sts=4
  */
 define("mo/mainloop", [
-  "mo/lang"
-], function(_){
+  "mo/lang",
+  "mo/easing/base"
+], function(_, easing){
 
-    var ANIMATE_FRAME = "RequestAnimationFrame",
+    var window = this,
+        ANIMATE_FRAME = "RequestAnimationFrame",
         LONG_AFTER = 4000000000000,
 
         animateFrame = window['webkit' + ANIMATE_FRAME] || 
@@ -3038,25 +3231,9 @@ define("mo/mainloop", [
         renderlib = {},
         stageLib = {},
 
-        _default_easing = {
-            linear: function(x, t, b, c) {
-                return b + c * x;
-            },
-            easeIn: function (x, t, b, c, d) {
-                return c*(t/=d)*t + b;
-            },
-            easeOut: function (x, t, b, c, d) {
-                return -c *(t/=d)*(t-2) + b;
-            },
-            easeInOut: function (x, t, b, c, d) {
-                if ((t/=d/2) < 1) return c/2*t*t + b;
-                return -c/2 * ((--t)*(t-2) - 1) + b;
-            }
-        },
-
         _default_config = {
             fps: 0,
-            easing: _default_easing
+            easing: _.copy(easing.functions)
         };
 
     function loop(timestamp){
@@ -3077,9 +3254,6 @@ define("mo/mainloop", [
             _.config(this, opt, _default_config);
             if (opt.fps) {
                 fps_limit = this.fps ? (1000/this.fps) : 0;
-            }
-            if (opt.easing) {
-                this.easing = _.mix(this.easing || {}, opt.easing);
             }
             return this;
         },
@@ -3328,12 +3502,13 @@ define("mo/mainloop", [
 define("choreo", [
   "mo/lang/es5",
   "mo/lang/mix",
+  "mo/easing/base",
   "mo/mainloop",
   "eventmaster"
-], function(es5, _, mainloop, Event){
+], function(es5, _, easing, mainloop, Event){
 
     var window = this,
-        VENDORS = ['', 'Moz', 'webkit', 'ms', 'O'],
+        VENDORS = ['Moz', 'webkit', 'ms', 'O', ''],
         EVENT_NAMES = {
             '': 'transitionend',
             'Moz': 'transitionend',
@@ -3353,51 +3528,30 @@ define("choreo", [
             + ' translateX(0px) translateY(0px) translateZ(0px)'
             + ' scaleX(1) scaleY(1) scaleZ(1) skewX(0deg) skewY(0deg)',
         ACTOR_OPS = ['target', 'prop', 'duration', 'easing', 'delay', 'to'],
-        RE_TRANSFORM = /(\w+)\(([^\)]+)/,
         RE_PROP_SPLIT = /\)\s+/,
-        RE_UNIT = /^[-\d\.]+/,
+        RE_UNIT = /^[\-\d\.]+/,
         test_elm = window.document.body,
-        _arry_push = Array.prototype.push,
         _array_slice = Array.prototype.slice,
         _getComputedStyle = (document.defaultView || {}).getComputedStyle,
         vendor_prop = { 'transform': '', 'transition': '' },
         useCSS = false,
-        parent_id = 0,
         hash_id = 0,
         stage_id = 0,
         render_id = 0,
-        _hash_pool = [],
         _stage = {},
         _transition_sets = {},
         _transform_promise = {},
-        timing_values = {
-            linear: 'linear',
-            easeIn: 'ease-in',
-            easeOut: 'ease-out',
-            easeInOut: 'ease-in-out'
-        },
-        timing_functions = {
-            linear: function(x, t, b, c) {
-                return b + c * x;
-            },
-            easeIn: function (x, t, b, c, d) {
-                return c*(t/=d)*t + b;
-            },
-            easeOut: function (x, t, b, c, d) {
-                return -c *(t/=d)*(t-2) + b;
-            },
-            easeInOut: function (x, t, b, c, d) {
-                if ((t/=d/2) < 1) return c/2*t*t + b;
-                return -c/2 * ((--t)*(t-2) - 1) + b;
-            }
-        };
+        timing_values = easing.values,
+        timing_functions = easing.functions;
 
     function fix_prop_name(lib, prefix, true_prop, succ){
         for (var prop in lib) {
             true_prop = prefix ? ('-' + prefix + '-' + prop) : prop;
             if (css_method(true_prop) in test_elm.style) {
                 lib[prop] = true_prop;
-                TRANSIT_EVENT = EVENT_NAMES[prefix];
+                if (!TRANSIT_EVENT && prop === 'transition') {
+                    TRANSIT_EVENT = EVENT_NAMES[prefix];
+                }
                 succ = true;
                 continue;
             }
@@ -3410,7 +3564,7 @@ define("choreo", [
             break;
         }
     }
-    fix_prop_name(vendor_prop, '');
+    //fix_prop_name(vendor_prop, '');
 
     var TRANSFORM = vendor_prop['transform'],
         TRANSITION = vendor_prop['transition'],
@@ -3638,7 +3792,7 @@ define("choreo", [
             return actorObj;
         },
 
-        group: function(actor){
+        group: function(){
             var self = this,
                 actorObj,
                 actors = _array_slice.call(arguments).filter(function(actor){
@@ -3942,7 +4096,9 @@ define("choreo", [
     }
 
     function when_transition_end(e){
-        e.stopPropagation();
+        if (e.target !== this) {
+            return;
+        }
         var self = this,
             hash = this._oz_fx,
             sets = _transition_sets[hash];
@@ -4121,7 +4277,7 @@ define("choreo", [
 
     _.mix(exports, {
 
-        VERSION: '1.0.1',
+        VERSION: '1.0.5',
         renderMode: useCSS ? 'css' : 'js',
         Stage: Stage,
         Actor: Actor,
@@ -4130,7 +4286,9 @@ define("choreo", [
             if (opt.easing) {
                 _.mix(timing_values, opt.easing.values);
                 _.mix(timing_functions, opt.easing.functions);
-                mainloop.config({ easing: timing_functions });
+                if (mainloop) {
+                    mainloop.config({ easing: timing_functions });
+                }
             }
             if (/(js|css)/.test(opt.renderMode)) {
                 useCSS = opt.renderMode === 'css';
@@ -4653,6 +4811,7 @@ define("../pachislot/app", [
                 slots = this._mainView.find('.slot');
             this._running = true;
             this.horserace.waiting();
+            this._screen.find('.main-view').removeClass('unopened');
             slots.forEach(function(slot, i){
                 var count = 0,
                     cards = $('li', slot),
@@ -4672,7 +4831,7 @@ define("../pachislot/app", [
                             var result = cards.eq(count).find('a');
                             results.push([
                                 result.attr('href').replace(/.*#/, ''),
-                                result.find('img').attr('src').replace(/.*\//, ''),
+                                result.css('background-image').match(/.*\/(.+)['"]?\)/)[1],
                                 result.find('strong').text()
                             ]);
                             if (results.length === slots.length) {
@@ -4714,106 +4873,81 @@ define("../pachislot/app", [
 
 });
 
-/* @source mo/easing.js */;
+/* @source mo/easing/bezier.js */;
 
-/**
- * An easing library supports jquery.js, standalone module and CSS timing functions
- *
- * using AMD (Asynchronous Module Definition) API with OzJS
- * see http://ozjs.org for details
- *
- * Copyright (C) 2010-2012, Dexter.Yy, MIT License
- * vim: et:ts=4:sw=4:sts=4
- */
-define("mo/easing", [], function(require, exports){
 
-    var def = 'easeOutQuad';
+define("mo/easing/bezier", [], function(){
 
-    var timing_values = {
-        //easeInQuad: 'cubic-bezier(0.550, 0.085, 0.680, 0.530)',
-        //easeOutQuad: 'cubic-bezier(0.250, 0.460, 0.450, 0.940)',
-        //easeInOutQuad: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
-        easeInCubic: 'cubic-bezier(0.550, 0.055, 0.675, 0.190)',
-        easeOutCubic: 'cubic-bezier(0.215, 0.610, 0.355, 1.000)',
-        easeInOutCubic: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
-        easeInQuart: 'cubic-bezier(0.895, 0.030, 0.685, 0.220)',
-        easeOutQuart: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
-        easeInOutQuart: 'cubic-bezier(0.770, 0.000, 0.175, 1.000)',
-        easeInQuint: 'cubic-bezier(0.755, 0.050, 0.855, 0.060)',
-        easeOutQuint: 'cubic-bezier(0.230, 1.000, 0.320, 1.000)',
-        easeInOutQuint: 'cubic-bezier(0.860, 0.000, 0.070, 1.000)',
-        easeInSine: 'cubic-bezier(0.470, 0.000, 0.745, 0.715)',
-        easeOutSine: 'cubic-bezier(0.390, 0.575, 0.565, 1.000)',
-        easeInOutSine: 'cubic-bezier(0.445, 0.050, 0.550, 0.950)',
-        easeInExpo: 'cubic-bezier(0.950, 0.050, 0.795, 0.035)',
-        easeOutExpo: 'cubic-bezier(0.190, 1.000, 0.220, 1.000)',
-        easeInOutExpo: 'cubic-bezier(1.000, 0.000, 0.000, 1.000)',
-        easeInCirc: 'cubic-bezier(0.600, 0.040, 0.980, 0.335)',
-        easeOutCirc: 'cubic-bezier(0.075, 0.820, 0.165, 1.000)',
-        easeInOutCirc: 'cubic-bezier(0.785, 0.135, 0.150, 0.860)',
-        easeInBack: 'cubic-bezier(0.600, -0.280, 0.735, 0.045)',
-        easeOutBack: 'cubic-bezier(0.175, 0.885, 0.320, 1.275)',
-        easeInOutBack: 'cubic-bezier(0.680, -0.550, 0.265, 1.550)',
-        easeInElastic: '',
-        easeOutElastic: '',
-        easeInOutElastic: '',
-        easeInBounce: '',
-        easeOutBounce: '',
-        easeInOutBounce: ''
+    // From: http://www.netzgesta.de/dev/cubic-bezier-timing-function.html
+    // 1:1 conversion to js from webkit source files
+    // UnitBezier.h, WebCore_animation_AnimationBase.cpp
+    return function(t,p1x,p1y,p2x,p2y,duration) {
+        var ax=0,bx=0,cx=0,ay=0,by=0,cy=0;
+        // `ax t^3 + bx t^2 + cx t' expanded using Horner's rule.
+        function sampleCurveX(t) {return ((ax*t+bx)*t+cx)*t;}
+        function sampleCurveY(t) {return ((ay*t+by)*t+cy)*t;}
+        function sampleCurveDerivativeX(t) {return (3.0*ax*t+2.0*bx)*t+cx;}
+        // The epsilon value to pass given that the animation is going to run over |dur| seconds. The longer the
+        // animation, the more precision is needed in the timing function result to avoid ugly discontinuities.
+        function solveEpsilon(duration) {return 1.0/(200.0*duration);}
+        function solve(x,epsilon) {return sampleCurveY(solveCurveX(x,epsilon));}
+        // Given an x value, find a parametric value it came from.
+        function solveCurveX(x,epsilon) {var t0,t1,t2,x2,d2,i;
+            function fabs(n) {if(n>=0) {return n;}else {return 0-n;}}
+            // First try a few iterations of Newton's method -- normally very fast.
+            for(t2=x, i=0; i<8; i++) {x2=sampleCurveX(t2)-x; if(fabs(x2)<epsilon) {return t2;} d2=sampleCurveDerivativeX(t2); if(fabs(d2)<1e-6) {break;} t2=t2-x2/d2;}
+            // Fall back to the bisection method for reliability.
+            t0=0.0; t1=1.0; t2=x; if(t2<t0) {return t0;} if(t2>t1) {return t1;}
+            while(t0<t1) {x2=sampleCurveX(t2); if(fabs(x2-x)<epsilon) {return t2;} if(x>x2) {t0=t2;}else {t1=t2;} t2=(t1-t0)*0.5+t0;}
+            return t2; // Failure.
+        }
+        // Calculate the polynomial coefficients, implicit first and last control points are (0,0) and (1,1).
+        cx=3.0*p1x; bx=3.0*(p2x-p1x)-cx; ax=1.0-cx-bx; cy=3.0*p1y; by=3.0*(p2y-p1y)-cy; ay=1.0-cy-by;
+        // Convert from input time to parametric value in curve, then from that to output time.
+        return solve(t, solveEpsilon(duration));
     };
 
-    /**
-     * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
-     * t: current time, b: begInnIng value, c: change In value, d: duration
-     */
+});
+
+/* @source mo/easing/functions.js */;
+
+
+define("mo/easing/functions", [
+  "mo/lang/mix",
+  "mo/easing/base"
+], function(_, base){
+
+    // http://gsgd.co.uk/sandbox/jquery/easing/
+    // t: current time, b: begInnIng value, c: change In value, d: duration
     var timing_functions = {
-        linear: function(x, t, b, c) {
-            return b + c * x;
-        },
-        jswing: function(x, t, b, c) {
-            return ((-Math.cos(x*Math.PI)/2) + 0.5) * c + b;
-        },
-        swing: function (x, t, b, c, d) {
-            return timing_functions[def](x, t, b, c, d);
-        },
-        easeInQuad: function (x, t, b, c, d) {
-            return c*(t/=d)*t + b;
-        },
-        easeOutQuad: function (x, t, b, c, d) {
-            return -c *(t/=d)*(t-2) + b;
-        },
-        easeInOutQuad: function (x, t, b, c, d) {
-            if ((t/=d/2) < 1) return c/2*t*t + b;
-            return -c/2 * ((--t)*(t-2) - 1) + b;
-        },
         easeInCubic: function (x, t, b, c, d) {
-            return c*(t/=d)*t*t + b;
+            return c*(t /= d)*t*t + b;
         },
         easeOutCubic: function (x, t, b, c, d) {
             return c*((t=t/d-1)*t*t + 1) + b;
         },
         easeInOutCubic: function (x, t, b, c, d) {
-            if ((t/=d/2) < 1) return c/2*t*t*t + b;
+            if ((t /= d/2) < 1) return c/2*t*t*t + b;
             return c/2*((t-=2)*t*t + 2) + b;
         },
         easeInQuart: function (x, t, b, c, d) {
-            return c*(t/=d)*t*t*t + b;
+            return c*(t /= d)*t*t*t + b;
         },
         easeOutQuart: function (x, t, b, c, d) {
             return -c * ((t=t/d-1)*t*t*t - 1) + b;
         },
         easeInOutQuart: function (x, t, b, c, d) {
-            if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+            if ((t /= d/2) < 1) return c/2*t*t*t*t + b;
             return -c/2 * ((t-=2)*t*t*t - 2) + b;
         },
         easeInQuint: function (x, t, b, c, d) {
-            return c*(t/=d)*t*t*t*t + b;
+            return c*(t /= d)*t*t*t*t + b;
         },
         easeOutQuint: function (x, t, b, c, d) {
             return c*((t=t/d-1)*t*t*t*t + 1) + b;
         },
         easeInOutQuint: function (x, t, b, c, d) {
-            if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+            if ((t /= d/2) < 1) return c/2*t*t*t*t*t + b;
             return c/2*((t-=2)*t*t*t*t + 2) + b;
         },
         easeInSine: function (x, t, b, c, d) {
@@ -4826,93 +4960,168 @@ define("mo/easing", [], function(require, exports){
             return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
         },
         easeInExpo: function (x, t, b, c, d) {
-            return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
+            return (t===0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
         },
         easeOutExpo: function (x, t, b, c, d) {
             return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
         },
         easeInOutExpo: function (x, t, b, c, d) {
-            if (t==0) return b;
+            if (t===0) return b;
             if (t==d) return b+c;
-            if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+            if ((t /= d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
             return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
         },
         easeInCirc: function (x, t, b, c, d) {
-            return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+            return -c * (Math.sqrt(1 - (t /= d)*t) - 1) + b;
         },
         easeOutCirc: function (x, t, b, c, d) {
             return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
         },
         easeInOutCirc: function (x, t, b, c, d) {
-            if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+            if ((t /= d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
             return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
         },
         easeInElastic: function (x, t, b, c, d) {
             var s=1.70158;var p=0;var a=c;
-            if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+            if (t===0) return b;  if ((t /= d)==1) return b+c;  if (!p) p=d*0.3;
             if (a < Math.abs(c)) { a=c; var s=p/4; }
             else var s = p/(2*Math.PI) * Math.asin (c/a);
             return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
         },
         easeOutElastic: function (x, t, b, c, d) {
             var s=1.70158;var p=0;var a=c;
-            if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+            if (t===0) return b;  if ((t /= d)==1) return b+c;  if (!p) p=d*0.3;
             if (a < Math.abs(c)) { a=c; var s=p/4; }
             else var s = p/(2*Math.PI) * Math.asin (c/a);
             return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
         },
         easeInOutElastic: function (x, t, b, c, d) {
             var s=1.70158;var p=0;var a=c;
-            if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
+            if (t===0) return b;  if ((t /= d/2)==2) return b+c;  if (!p) p=d*(0.3*1.5);
             if (a < Math.abs(c)) { a=c; var s=p/4; }
             else var s = p/(2*Math.PI) * Math.asin (c/a);
-            if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
-            return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
+            if (t < 1) return -0.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+            return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*0.5 + c + b;
         },
         easeInBack: function (x, t, b, c, d, s) {
-            if (s == undefined) s = 1.70158;
-            return c*(t/=d)*t*((s+1)*t - s) + b;
+            if (s == null) s = 1.70158;
+            return c*(t /= d)*t*((s+1)*t - s) + b;
         },
         easeOutBack: function (x, t, b, c, d, s) {
-            if (s == undefined) s = 1.70158;
+            if (s == null) s = 1.70158;
             return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
         },
         easeInOutBack: function (x, t, b, c, d, s) {
-            if (s == undefined) s = 1.70158; 
-            if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+            if (s == null) s = 1.70158; 
+            if ((t /= d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
             return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
         },
         easeInBounce: function (x, t, b, c, d) {
             return c - timing_functions.easeOutBounce (x, d-t, 0, c, d) + b;
         },
         easeOutBounce: function (x, t, b, c, d) {
-            if ((t/=d) < (1/2.75)) {
+            if ((t /= d) < (1/2.75)) {
                 return c*(7.5625*t*t) + b;
             } else if (t < (2/2.75)) {
-                return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+                return c*(7.5625*(t-=(1.5/2.75))*t + 0.75) + b;
             } else if (t < (2.5/2.75)) {
-                return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+                return c*(7.5625*(t-=(2.25/2.75))*t + 0.9375) + b;
             } else {
-                return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+                return c*(7.5625*(t-=(2.625/2.75))*t + 0.984375) + b;
             }
         },
         easeInOutBounce: function (x, t, b, c, d) {
-            if (t < d/2) return timing_functions.easeInBounce (x, t*2, 0, c, d) * .5 + b;
-            return timing_functions.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
+            if (t < d/2) return timing_functions.easeInBounce (x, t*2, 0, c, d) * 0.5 + b;
+            return timing_functions.easeOutBounce (x, t*2-d, 0, c, d) * 0.5 + c*0.5 + b;
         }
     };
 
-    timing_values.easeIn = timing_values.easeInQuad = 'ease-in';
-    timing_values.easeOut = timing_values.easeOutQuad = 'ease-out';
-    timing_values.easeInOut = timing_values.easeInOutQuad = 'ease-in-out';
+    timing_functions.easeInQuad = base.functions.easeIn;
+    timing_functions.easeOutQuad = base.functions.easeOut;
+    timing_functions.easeInOutQuad = base.functions.easeInOut;
 
-    timing_functions.easeIn = timing_functions.easeInQuad;
-    timing_functions.easeOut = timing_functions.easeOutQuad;
-    timing_functions.easeInOut = timing_functions.easeInOutQuad;
+    return _.mix(timing_functions, base.functions);
 
-    exports.def = def;
-    exports.values = timing_values;
-    exports.functions = timing_functions;
+});
+
+/* @source mo/easing/timing.js */;
+
+
+define("mo/easing/timing", [
+  "mo/lang/mix",
+  "mo/easing/base"
+], function(_, base){
+
+    // Penner Equations (approximated)
+    // http://matthewlein.com/ceaser/
+    var pos = {
+        'easeInQuad'     :  [0.550, 0.085, 0.680, 0.530],
+        'easeInCubic'    :  [0.550, 0.055, 0.675, 0.190],
+        'easeInQuart'    :  [0.895, 0.030, 0.685, 0.220],
+        'easeInQuint'    :  [0.755, 0.050, 0.855, 0.060],
+        'easeInSine'     :  [0.470, 0.000, 0.745, 0.715],
+        'easeInExpo'     :  [0.950, 0.050, 0.795, 0.035],
+        'easeInCirc'     :  [0.600, 0.040, 0.980, 0.335],
+        'easeInBack'     :  [0.600, -0.280, 0.735, 0.045],
+        'easeOutQuad'    :  [0.250, 0.460, 0.450, 0.940],
+        'easeOutCubic'   :  [0.215, 0.610, 0.355, 1.000],
+        'easeOutQuart'   :  [0.165, 0.840, 0.440, 1.000],
+        'easeOutQuint'   :  [0.230, 1.000, 0.320, 1.000],
+        'easeOutSine'    :  [0.390, 0.575, 0.565, 1.000],
+        'easeOutExpo'    :  [0.190, 1.000, 0.220, 1.000],
+        'easeOutCirc'    :  [0.075, 0.820, 0.165, 1.000],
+        'easeOutBack'    :  [0.175, 0.885, 0.320, 1.275],
+        'easeInOutQuad'  :  [0.455, 0.030, 0.515, 0.955],
+        'easeInOutCubic' :  [0.645, 0.045, 0.355, 1.000],
+        'easeInOutQuart' :  [0.770, 0.000, 0.175, 1.000],
+        'easeInOutQuint' :  [0.860, 0.000, 0.070, 1.000],
+        'easeInOutSine'  :  [0.445, 0.050, 0.550, 0.950],
+        'easeInOutExpo'  :  [1.000, 0.000, 0.000, 1.000],
+        'easeInOutCirc'  :  [0.785, 0.135, 0.150, 0.860],
+        'easeInOutBack'  :  [0.680, -0.550, 0.265, 1.550]
+    };
+
+    function stringify(pos, values){
+        values = values || {};
+        for (var i in pos) {
+            values[i] = 'cubic-bezier(' + pos[i].join(',') + ')';
+        }
+        return values;
+    }
+
+    pos.swing = pos.jswing = base.positions.ease;
+
+    return {
+        positions: _.mix(pos, base.positions),
+        values: _.mix(stringify(pos), base.values),
+        stringify: stringify
+    };
+
+});
+
+/* @source mo/easing.js */;
+
+/**
+ * An easing library supports jquery.js, standalone module and CSS timing functions
+ *
+ * using AMD (Asynchronous Module Definition) API with OzJS
+ * see http://ozjs.org for details
+ *
+ * Copyright (C) 2010-2012, Dexter.Yy, MIT License
+ * vim: et:ts=4:sw=4:sts=4
+ */
+define("mo/easing", [
+  "mo/lang/mix",
+  "mo/easing/base",
+  "mo/easing/timing",
+  "mo/easing/functions",
+  "mo/easing/bezier"
+], function(_, base, timing, functions, bezier){
+
+    return _.mix(_.copy(base), timing, {
+        functions: functions,
+        bezier: bezier 
+    });
 
 });
 
@@ -5148,7 +5357,7 @@ define("mo/key", [
         // Keypress represents characters, not special keys
         var special = event.type !== "keypress" && specialKeys[ event.which ],
             character = String.fromCharCode( event.which ).toLowerCase(),
-            key, modif = "", possible = {};
+            modif = "", possible = {};
 
         // check combinations (alt|ctrl|shift+anything)
         if ( event.altKey && special !== "alt" ) {
@@ -5227,7 +5436,7 @@ require([
     'choreo',
     'eventmaster',
     'pachislot/app',
-    'data/2012',
+    'data/2014',
     'mo/domready'
 ], function(_, $, key, easingLib, choreo, event, app, data){
 
@@ -5240,7 +5449,7 @@ require([
     app.init({
         node: $('.machine'),
         data: data,
-        dataPicUrl: 'pics/data/2012/',
+        dataPicUrl: 'pics/data/2014/',
         observer: observer
     });
 

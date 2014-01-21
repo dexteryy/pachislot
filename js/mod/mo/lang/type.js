@@ -6,14 +6,14 @@
  * vim: et:ts=4:sw=4:sts=4
  */
 define("mo/lang/type", [
-    "mo/lang/es5"
+    "./es5"
 ], function(_0, require, exports){
 
     var _toString = Object.prototype.toString,
         _aproto = Array.prototype,
         _typeMap = {};
 
-    _aproto.forEach.call("Boolean Number String Function Array Date RegExp Object".split(" "), function(name , i){
+    _aproto.forEach.call("Boolean Number String Function Array Date RegExp Object".split(" "), function(name){
         this[ "[object " + name + "]" ] = name.toLowerCase();
     }, _typeMap);
 
@@ -30,14 +30,26 @@ define("mo/lang/type", [
     };
 
     exports.isWindow = function(obj) {
-        return "setInterval" in obj;
+		return obj && obj === obj.window;
     };
 
 	exports.isEmptyObject = function(obj) {
         for (var name in obj) {
+            name = null;
             return false;
         }
         return true;
 	};
+
+    exports.isArraylike = function(obj){
+        var l = obj.length;
+        return !exports.isWindow(obj) 
+            && (typeof obj !== 'function' 
+                || obj.constructor !== Function)
+            && (l === 0 
+                || typeof l === "number"
+                && l > 0 
+                && (l - 1) in obj);
+    };
 
 });

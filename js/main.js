@@ -19,7 +19,7 @@ require([
     'choreo',
     'eventmaster',
     'pachislot/app',
-    'data/2012',
+    'data/2014',
     'mo/domready'
 ], function(_, $, key, easingLib, choreo, event, app, data){
 
@@ -32,7 +32,7 @@ require([
     app.init({
         node: $('.machine'),
         data: data,
-        dataPicUrl: 'pics/data/2012/',
+        dataPicUrl: 'pics/data/2014/',
         observer: observer
     });
 

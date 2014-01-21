@@ -6,10 +6,10 @@
  * vim: et:ts=4:sw=4:sts=4
  */
 define("mo/network/ajax", [
-    "mo/browsers"
+    "../browsers"
 ], function(browsers, require, exports){
 
-    var httpParam = function(a) {
+    exports.params = function(a) {
         var s = [];
         if (a.constructor == Array) {
             for (var i = 0; i < a.length; i++)
@@ -21,10 +21,24 @@ define("mo/network/ajax", [
         return s.join("&").replace(/%20/g, "+");
     };
 
+    exports.parseJSON = function(json){
+        json = json
+            .replace(/^[\w(<\/*!\s]*?\{/, '{')
+            .replace(/[^\}]*$/, '');
+        try {
+            json = window.JSON && window.JSON.parse 
+                ? window.JSON.parse(json) 
+                : window["eval"](json);
+        } catch(ex) {
+            json = false;
+        }
+        return json;
+    };
+
     /**
      * From jquery by John Resig
      */ 
-    var ajax = function(s){
+    exports.ajax = function(s){
         var options = {
             type: s.type || "GET",
             url: s.url || "",
@@ -39,6 +53,8 @@ define("mo/network/ajax", [
             complete: s.complete || function(){},
             handleError: s.handleError || function(){},
             success: s.success || function(){},
+            xhrFields: s.xhrFields || {},
+            headers: s.headers || {},
             accepts: {
                 xml: "application/xml, text/xml",
                 html: "text/html",
@@ -50,7 +66,7 @@ define("mo/network/ajax", [
         };
         
         if ( options.data && options.processData && typeof options.data != "string" )
-            options.data = httpParam(options.data);
+            options.data = this.params(options.data);
         if ( options.data && options.type.toLowerCase() == "get" ) {
             options.url += (options.url.match(/\?/) ? "&" : "?") + options.data;
             options.data = null;
@@ -58,13 +74,24 @@ define("mo/network/ajax", [
         
         var status, data, requestDone = false, xhr = window.ActiveXObject ? new ActiveXObject("Microsoft.XMLHTTP") : new XMLHttpRequest();
         xhr.open( options.type, options.url, true, options.username, options.password );
+
         try {
-            if ( options.data && options.contentType !== false )
+            var i;
+            if (options.xhrFields) {
+                for (i in options.xhrFields) {
+                    xhr[i] = options.xhrFields[i];
+                }
+            }
+            if ( options.data && options.contentType !== false ) { 
                 xhr.setRequestHeader("Content-Type", options.contentType);
+            }
             xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
             xhr.setRequestHeader("Accept", s.dataType && options.accepts[ s.dataType ] ?
                 options.accepts[ s.dataType ] + ", */*" :
                 options.accepts._default );
+            for (i in options.headers) {
+                xhr.setRequestHeader(i, options.headers[i]);
+            }
         } catch(e){}
         
         if ( options.beforeSend )
@@ -109,7 +136,7 @@ define("mo/network/ajax", [
 
         function httpSuccess(r) {
             try {
-                return !r.status && location.protocol == "file:" || ( r.status >= 200 && r.status < 300 ) || r.status == 304 || r.status == 1223 || browsers.safari && r.status == undefined;
+                return !r.status && location.protocol == "file:" || ( r.status >= 200 && r.status < 300 ) || r.status == 304 || r.status == 1223 || browsers.safari && !r.status;
             } catch(e){}
             return false;
         }
@@ -120,15 +147,14 @@ define("mo/network/ajax", [
             if ( xml && data.documentElement.tagName == "parsererror" )
                 throw "parsererror";
             if ( type == "script" )
-                eval.call( window, data );
+                (window.execScript || function(data){
+                    window["eval"].call(window, data);
+                })(data);
             if ( type == "json" )
-                data = eval("(" + data + ")");
+                data = exports.parseJSON(data);
             return data;
         }
         return xhr;
     };
-
-    exports.ajax = ajax;
-    exports.params = httpParam;
 
 });

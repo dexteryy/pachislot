@@ -6,14 +6,15 @@
  * vim: et:ts=4:sw=4:sts=4
  */
 define("mo/template/micro", [
-    "mo/lang",
-    "mo/template/string"
+    "../lang",
+    "./string"
 ], function(_, stpl, require, exports){
 
     var document = this.document;
 
     exports.tplSettings = {
         _cache: {},
+        comment: /\{\*([\s\S]+?)\*\}/g,
         evaluate: /\{%([\s\S]+?)%\}/g,
         interpolate: /\{%=([\s\S]+?)%\}/g
     };
@@ -40,12 +41,13 @@ define("mo/template/micro", [
                 }
             }
         } else {
-            func = new Function(namespace || 'obj', 'api', 'var __p=[];' 
+            var tplfunc = new Function(namespace || 'obj', 'api', 'var __p=[];' 
                 + (namespace ? '' : 'with(obj){')
                     + 'var mix=api.mix,escapeHTML=api.escapeHTML,substr=api.substr,include=api.include,has=api._has(' + (namespace || 'obj') + ');'
                     + '__p.push(\'' +
                     str.replace(/\\/g, '\\\\')
                         .replace(/'/g, "\\'")
+                        .replace(c.comment, '')
                         .replace(c.interpolate, function(match, code) {
                             return "'," + code.replace(/\\'/g, "'") + ",'";
                         })
@@ -59,8 +61,11 @@ define("mo/template/micro", [
                     + "');" 
                 + (namespace ? "" : "}")
                 + "return __p.join('');");
+            func = function(data, helpers){
+                return tplfunc.call(this, data, _.mix({}, exports.tplHelpers, helpers));
+            };
         }
-        return !func ? '' : (data ? func(data, exports.tplHelpers) : func);
+        return !func ? '' : (data ? func(data) : func);
     }
 
     exports.convertTpl = convertTpl;

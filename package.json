@@ -1,11 +1,19 @@
 {
-  "name": "doubanchouII:pachislot",
+  "name": "doubanchouIIpachislot",
   "description": "",
   "version": "0.1.0",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+  },
   "devDependencies": {
-    "grunt-istatic": ">=0.1.0",
-    "grunt": "0.3.17",
-    "grunt-ozjs": ">=0.1.9",
-    "grunt-contrib-compass": "~0.1.0"
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-ozjs": "~0.4.2",
+    "grunt-furnace": "~0.1.3",
+    "grunt-contrib-compass": "~0.1.3"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
   }
 }

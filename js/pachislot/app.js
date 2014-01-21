@@ -255,6 +255,7 @@ define([
                 slots = this._mainView.find('.slot');
             this._running = true;
             this.horserace.waiting();
+            this._screen.find('.main-view').removeClass('unopened');
             slots.forEach(function(slot, i){
                 var count = 0,
                     cards = $('li', slot),
@@ -274,7 +275,7 @@ define([
                             var result = cards.eq(count).find('a');
                             results.push([
                                 result.attr('href').replace(/.*#/, ''),
-                                result.find('img').attr('src').replace(/.*\//, ''),
+                                result.css('background-image').match(/.*\/(.+)['"]?\)/)[1],
                                 result.find('strong').text()
                             ]);
                             if (results.length === slots.length) {

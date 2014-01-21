@@ -12,12 +12,44 @@ define("mo/lang/es5", [], function(){
         String = host.String,
         Object = host.Object,
         Function = host.Function,
-        window = host.window,
-        _toString = Object.prototype.toString,
-        _aproto = Array.prototype;
+        //window = host.window,
+        _objproto = Object.prototype,
+        _arrayproto = Array.prototype,
+        _fnproto = Function.prototype;
 
-    if (!_aproto.filter) {
-        _aproto.filter = function(fn, sc){
+    function Empty() {}
+
+    if (!_fnproto.bind) {
+        _fnproto.bind = function (that) {
+            var target = this,
+                args = _arrayproto.slice.call(arguments, 1),
+                bound = function () {
+                    var arglist = args.concat(_arrayproto.slice.call(arguments));
+                    if (this instanceof bound) {
+                        var result = target.apply(this, arglist);
+                        if (Object(result) === result) {
+                            return result;
+                        }
+                        return this;
+                    } else {
+                        return target.apply(that, arglist);
+                    }
+                };
+            if(target.prototype) {
+                Empty.prototype = target.prototype;
+                bound.prototype = new Empty();
+                Empty.prototype = null;
+            }
+            return bound;
+        };
+    }
+
+    var _call = _fnproto.call,
+        _hasOwnProperty = _call.bind(_objproto.hasOwnProperty),
+        _toString = _call.bind(_objproto.toString);
+
+    if (!_arrayproto.filter) {
+        _arrayproto.filter = function(fn, sc){
             var r = [];
             for (var i = 0, l = this.length; i < l; i++){
                 if (i in this && fn.call(sc, this[i], i, this)) {
@@ -28,8 +60,8 @@ define("mo/lang/es5", [], function(){
         };
     }
         
-    if (!_aproto.forEach) {
-        _aproto.forEach = function(fn, sc){
+    if (!_arrayproto.forEach) {
+        _arrayproto.forEach = function(fn, sc){
             for(var i = 0, l = this.length; i < l; i++){
                 if (i in this)
                     fn.call(sc, this[i], i, this);
@@ -37,8 +69,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.map) {
-        _aproto.map = function(fn, sc){
+    if (!_arrayproto.map) {
+        _arrayproto.map = function(fn, sc){
             for (var i = 0, copy = [], l = this.length; i < l; i++) {
                 if (i in this) {
                     copy[i] = fn.call(sc, this[i], i, this);
@@ -48,8 +80,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.reduce) {
-        _aproto.reduce = function(fn, sc){
+    if (!_arrayproto.reduce) {
+        _arrayproto.reduce = function(fn, sc){
             for (var i = 1, prev = this[0], l = this.length; i < l; i++) {
                 if (i in this) {
                     prev = fn.call(sc, prev, this[i], i, this);
@@ -59,8 +91,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.some) {
-        _aproto.some = function(fn, sc){
+    if (!_arrayproto.some) {
+        _arrayproto.some = function(fn, sc){
             for (var i = 0, l = this.length; i < l; i++){
                 if (i in this && fn.call(sc, this[i], i, this)) {
                     return true;
@@ -70,8 +102,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.every) {
-        _aproto.every = function(fn, sc){
+    if (!_arrayproto.every) {
+        _arrayproto.every = function(fn, sc){
             for (var i = 0, l = this.length; i < l; i++){
                 if (i in this && !fn.call(sc, this[i], i, this)) {
                     return false;
@@ -81,8 +113,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.indexOf) {
-        _aproto.indexOf = function(elt, from){
+    if (!_arrayproto.indexOf) {
+        _arrayproto.indexOf = function(elt, from){
             var l = this.length;
             from = parseInt(from, 10) || 0;
             if (from < 0)
@@ -95,8 +127,8 @@ define("mo/lang/es5", [], function(){
         };
     }
 
-    if (!_aproto.lastIndexOf) {
-        _aproto.lastIndexOf = function(elt, from){
+    if (!_arrayproto.lastIndexOf) {
+        _arrayproto.lastIndexOf = function(elt, from){
             var l = this.length;
             from = parseInt(from, 10) || l - 1;
             if (from < 0)
@@ -111,7 +143,7 @@ define("mo/lang/es5", [], function(){
 
     if (!Array.isArray) {
         Array.isArray = function(obj) {
-            return _toString.call(obj) === "[object Array]";
+            return _toString(obj) === "[object Array]";
         };
     }
 
@@ -123,8 +155,8 @@ define("mo/lang/es5", [], function(){
         trimRight = /[\s\xA0]+$/;
     }
     if (!String.prototype.trim) {
-        String.prototype.trim = function(text) {
-            return text == null ?  "" : text.toString().replace(trimLeft, "").replace(trimRight, "");
+        String.prototype.trim = function() {
+            return this.replace(trimLeft, "").replace(trimRight, "");
         };
     }
 
@@ -132,7 +164,7 @@ define("mo/lang/es5", [], function(){
         Object.keys = function(obj) {
             var keys = [];
             for (var prop in obj) {
-                if ( obj.hasOwnProperty(prop) ) {
+                if (_hasOwnProperty(obj, prop)) {
                     keys.push(prop);
                 }
             }
@@ -154,18 +186,4 @@ define("mo/lang/es5", [], function(){
         };
     }
     
-
-    if (!Function.prototype.bind) {
-        Function.prototype.bind = function (oThis) {
-            var aArgs = _aproto.slice.call(arguments, 1), 
-                fToBind = this, 
-                fBound = function () {
-                    return fToBind.apply(this instanceof fBound ? this : oThis || window, 
-                        aArgs.concat(_aproto.slice.call(arguments)));    
-                };
-            fBound.prototype = Object.create(this.prototype);
-            return fBound;
-        };
-    }
-
 });

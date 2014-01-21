@@ -1,13 +1,13 @@
 
 <div class="view export-view">
+    <h3>导出全部结果</h3>
     <fieldset>
-        <legend>导出全部结果</legend>
         {% records.forEach(function(game){ %}
             <h6>{%= game.title %}</h6>
-            <p>人数：{%= game.cal %}</p>
+            <p>人数：{%= game.col %}</p>
             {% (game.results || []).forEach(function(item){ %}
             <p>
-                <strong>{%= (item[0]) %}</strong>
+                <strong>{%= (item[0]) %} - </strong>
                 <span>{%= (item[2]) %}</span>
             </p>
             {% }); %}
